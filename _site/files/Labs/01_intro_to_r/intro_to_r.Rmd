@@ -1,0 +1,559 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Introduction to R and RStudio   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Introduction to R and RStudio">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Labs/01_intro_to_r/intro_to_r.Rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Labs/01_intro_to_r/intro_to_r.Rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Introduction to R and RStudio">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Introduction to R and RStudio
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r global_options, include = FALSE}
+knitr::opts_chunk$set(eval = TRUE, results = FALSE)
+library(tidyverse)
+library(openintro)
+```
+
+## The RStudio Interface
+
+The goal of this lab is to introduce you to R and RStudio, which you'll be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions. To clarify which is which: `R` is the name of the programming language itself and RStudio is a convenient interface for working with `R` .
+
+As the labs progress, you are encouraged to explore beyond what the labs dictate; a willingness to experiment will make you a much better programmer! Before we get to that stage, however, you need to build some basic fluency in `R`. First, we will explore the fundamental building blocks of `R` and RStudio: the RStudio interface, reading in data, and basic commands for working with data in `R`.
+
+Go ahead and launch RStudio. You should see a window that looks like the image shown below.
+
+```{r r-interface-2020, echo=FALSE, results="asis"}
+knitr::include_graphics("img/r-interface-2020.png")
+```
+
+The panel on the lower left is where the action happens. This panel is called the *console*. Every time you launch RStudio, it will have the same text at the top of the console telling you the version of R that you're running. Below that information is the *prompt*, indicated by the `>` symbol. As its name suggests, this prompt is really a request: a request for a command. Initially, interacting with `R` is all about typing commands and interpreting the output. These commands and their syntax have evolved over decades (literally) and now provide what many users feel is a fairly natural way to access data and organize, describe, and invoke statistical computations.
+
+The panel in the upper right contains your *environment* as well as a history of the commands that you've previously entered.
+
+The panel in the lower right contains tabs for browse the *files* in your project folder, access *help* files for `R` functions, install and manage `R` *packages*, and inspecting visualizations. By default, all data visualizations you make will appear directly below the code you used to create them. If you would rather your plots appear in the *plots* tab, you will need to change your global options.
+
+### R Packages
+
+`R` is an open-source programming language, meaning that users can contribute packages that make our lives easier, and we can use them for free. For this lab, and many others in the future, we will use the following:
+
+-   The **tidyverse** "umbrella" package which houses a suite of many different `R` packages: for data wrangling and data visualization
+-   The **openintro** `R` package: for data and custom functions with the OpenIntro resources
+
+In the lower right hand corner click on the *Packages* tab. Type the name of each of these packages (tidyverse, openintro) into the search box to see if they have been installed. If these packages do not appear when you type in their name, install them by copying and pasting or typing the following two lines of code into the console of your RStudio session. Be sure to press enter/return after each line of code.
+
+```{r install-packages, message = FALSE, eval = FALSE}
+install.packages("tidyverse")
+install.packages("openintro")
+```
+
+After pressing enter/return, a stream of text will begin, communicating the process `R` is going through to install the package from the location you selected when you installed `R`. If you were not prompted to select a server for downloading packages when you installed `R`, RStudio may prompt you to select a server from which to download; any of them will work.
+
+You only need to *install* packages once, but you need to *load* them each time you relaunch RStudio. We load packages with the `library` function. Copy and paste or type the the following two lines in your console to load the tidyverse and openintro packages into your working environment.
+
+```{r load-packages, message = FALSE}
+library(tidyverse)
+library(openintro)
+```
+
+We are choosing to use the tidyverse package because it consists of a set of packages necessary for different aspects of working with data, anything from loading data to wrangling data to visualizing data to analyzing data. Additionally, these packages share common philosophies and are designed to work together. You can find more about the packages in the tidyverse at [tidyverse.org](http://tidyverse.org/).
+
+### Creating a reproducible lab report
+
+We will be using R Markdown to create reproducible lab reports. See the following videos describing why and how:
+
+
+[**Why use R Markdown for Lab Reports?**](https://youtu.be/lNWVQ2oxNho) <iframe width="669" height="502" src="https://www.youtube.com/embed/lNWVQ2oxNho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
+
+[**Using R Markdown for Lab Reports in RStudio**](https://youtu.be/o0h-eVABe9M) <iframe width="669" height="502" src="https://www.youtube.com/embed/o0h-eVABe9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
+
+In a nutshell, in RStudio, go to New File -\> R Markdown... Then, choose "From Template" and then choose `Lab Report for OpenIntro Statistics Lab 1` from the list of templates.
+
+Going forward you should refrain from typing your code directly in the console, as this makes it very difficult to remember and reproduce the output you want to reference. Potentially the most important feature of R Markdown files is that they allow for us to nest our `R` code within a written report. In an R Markdown file, `R` code appears in a gray box, which we call "code chunks." The R Markdown file knows that the gray box contains `R` code because it begins with three tick marks (\`\`\`), followed by two curly braces that contain a lowercase letter r ({r}). You've already seen this above!
+
+Instead of typing our `R` code into the console, we encourage you to type any code you produce (final correct answer, or anything you're just trying out) in the `R` code chunk associated with each problem. You can execute the `R` code you type in these code chunks similar to how you typed code into the console and pressed enter/return. Within the code chunk there are two ways to execute a line of `R` code: (1) place your cursor on the line on code and press `Ctrl-Enter` or `Cmd-Enter` at the same time, or (2) place your cursor on the line and press the "Run" button in the upper right hand corner of the R Markdown file. Alternatively, if you wanted to run all of the `R` code in a given code chunk, you can click on the "Play" button in the upper right hand corner of the code chunk (green sideways triangle).
+
+If at any point you need to start over and run all of the code chunks before a specific code chunk, you click on the "Fastforward" button in the upper right hand corner of that code chunk (gray upside down triangle with a bar below). This will run every code chunk that occurred *before* that code chunk, but *will not* execute the `R` code included in that code chunk.
+
+
+## Using R as a calculator
+
+R can be used as an calculator as we already saw in the tutorial. So let's get a refresher on this.
+
+Let's say we want to calculate $\frac{36}{29(15-9)}$. Then we would do the following:
+
+```{r R-calc-example-frac, results=TRUE}
+36 / (29 * (15 - 9))
+```
+
+R also has built-in constants such as $pi$ and mathematical functions such as $e$ and $log$.
+
+Let's find the radius of a circle with radius 4. Then using R we can get the area and the circumference.
+
+```{r pi-example, results=TRUE}
+radius = 4
+
+area = pi * radius^2
+
+circumference = 2 * pi * radius
+
+c("Area" = area, "Circumference" = circumference)
+```
+
+> Note: `c()` allows us to concatenate multiple values or vectors together. We can also give each column a name as we did above.
+
+Now let's use the built-in mathematical functions.
+
+To use the exponential function $(e)$, we will make use of `exp()` and to compute logarithms, we will use `log()`, which by default finds the natural log of the input. `log()` has the capability to take in a parameter where we can specify the base we want to work on as well.
+
+Let's test these functions to obtain common numbers that we know of
+
+```{r exp-log-example, results = TRUE}
+exp(1)
+
+log(1)
+```
+
+Now, we will test the property of $e^{ln(x)} = x = ln(e^x)$.
+
+```{r exp-log-property-example, results=TRUE}
+x = 10
+
+exp(log(10))
+
+log(exp(10))
+```
+
+As we can see, the property still holds true.
+
+Now with the help of the Introduction to R tutorial and the examples provided above, answer the following exercises:
+
+
+1. Use R to calculate $\frac{2.59 - \frac{22}{7}}{10-\sqrt{23}}$.
+
+2. Find the natural log of $pi$ and $e^{2\pi^2}$.
+
+2. Let $a=3$ and $b=7$. Check to see if you obtain the same values for $(a+b)^2$ and $a^2 + 2ab + b^2$.
+
+3. Let $x1 = [1,2,3,4,5]$ and $x2 = [6,9,1,11,5]$. Find $\frac{x1^2+x2}{2}$
+
+4. Let $x3 = [7,6,8,5,5,9,1]$ and $x4 = [1,2,3]$. Find $x3+x4$ and explain the reason behind obtaining this result.
+
+## Dr. Arbuthnot's Baptism Records
+
+To get started, let's take a peek at the data.
+
+```{r load-abrbuthnot-data}
+arbuthnot
+```
+
+Again, you can run the code above by:
+
+-   placing your cursor on the line and pressing `Ctrl-Enter` or `Cmd-Enter`
+-   placing your cursor on the line and pressing the "Run" button in the upper right hand corner of the R Markdown file, or
+-   by clicking on the green arrow at the top right hand corner of the code chunk
+
+The single line of code included in this code chunk instructs `R` to load some data: the Arbuthnot baptism counts for boys and girls. You should see that the *Environment* tab in the upper right hand corner of the RStudio window now lists a data set called `arbuthnot` that has 82 observations on 3 variables. As you interact with `R`, you will create objects for a variety of purposes. Sometimes you load the objects into your workspace by loading a package, as we have done here, but sometimes you create objects yourself as a byproduct of a computation process, for an analysis you have performed, or for a visualization you have created.
+
+The Arbuthnot data set refers to the work of Dr. John Arbuthnot, an 18<sup>th</sup> century physician, writer, and mathematician. He was interested in the ratio of newborn boys to newborn girls, so he gathered the baptism records for children born in London for every year from 1629 to 1710. Once again, we can view the data by running the code below or by typing the name of the dataset into the console. Be careful the spelling and capitalization you use! `R` is case sensitive, so if you accidentally type `Arbuthnot` `R` will tell you that object cannot be found.
+
+```{r view-data}
+arbuthnot
+```
+
+This command does display the data for us, however, printing the whole dataset in the console is not that useful. One advantage of RStudio is that it comes with a built-in data viewer. The *Environment* tab (in the upper right pane) lists the objects in your environment. Clicking on the name `arbuthnot` will open up a *Data Viewer* tab next to your R Markdown file, which provides an alternative display of the data set. This display should feel similar to viewing data in Excel, where you are able to scroll through the dataset to inspect it. However, unlike Excel, you **will not** be able to edit the data in this tab. Once you are done viewing the data, You can close this tab by clicking on the `x` in the upper left hand corner.
+
+When inspecting the data, you should see four columns of numbers and 82 rows. Each row represents a different year that Arbuthnot collected data. The first entry in each row is the row number (an index we can use to access the data from individual years if we want), the second is the year, and the third and fourth are the numbers of boys and girls baptized that year, respectively. Use the scrollbar on the right side of the console window to examine the complete data set.
+
+Note that the row numbers in the first column are not part of Arbuthnot's data. `R` adds these row numbers as part of its printout to help you make visual comparisons. You can think of them as the index that you see on the left side of a spreadsheet. In fact, the comparison of the data to a spreadsheet will generally be helpful. `R` has stored Arbuthnot's data in an object similar to a spreadsheet or a table, which `R` calls a *data frame*.
+
+You can see the dimensions of this data frame as well as the names of the variables and the first few observations by inserting the name of the dataset into the `glimpse()` function, as seen below:
+
+```{r glimpse-data}
+glimpse(arbuthnot)
+```
+
+Although we previously said that it is best practice to type all of your `R` code into the code chunk, it is better practice to type this command into your console. Generally, you should type all of the code that is necessary for your solution into the code chunk. Because this command is used to explore the data, it is not necessary for your solution code and **should not** be included in your solution file.
+
+This command should output the following:
+
+```{r glimpse-data-result, echo=FALSE, results = TRUE}
+glimpse(arbuthnot)
+```
+
+We can see that there are 82 observations and 3 variables in this dataset. The variable names are `year`, `boys`, and `girls`. At this point, you might notice that many of the commands in `R` look a lot like functions from math class; that is, invoking `R` commands means supplying a function with some number of inputs (what are called arguments) which the function uses to produce an output. The `glimpse()` command, for example, took a single argument, the name of a data frame and produced a display of the dataset as an output.
+
+## Some Exploration
+
+Let's start to examine the data a little more closely. We can access the data in a single column of a data frame by extracting the column with a `$`. For example, the code below extracts the `boys` column from the `arbuthnot` data frame.
+
+```{r view-boys}
+arbuthnot$boys
+```
+
+This command will only show the number of boys baptized each year. `R` interprets the `$` as saying "go to the data frame that comes before me, and find the variable that comes after me."
+
+5.  What command would you use to extract just the counts of girls baptized? Try it out in the console!
+
+Notice that the way `R` has printed these data is different. When we looked at the complete data frame, we saw 82 rows, one on each line of the display. These data have been extracted from the data frame, so they are no longer structured in a table with other variables. Instead, these data are displayed one right after another. Objects that print out in this way are called *vectors*; similar to the vectors you have seen in mathematics courses, vectors represent a list of numbers. `R` has added numbers displayed in [brackets] along the left side of the printout to indicate each entry's location within the vector. For example, 5218 follows `[1]`, indicating that `5218` is the first entry in the vector. If `[43]` was displayed at the beginning of a line, that indicate that the first number displayed on that line would correspond to the 43<sup>rd</sup> entry in that vector.
+
+
+## Resources for learning R and working in RStudio
+
+That was a short introduction to R and RStudio, but we will provide you with more functions and a more complete sense of the language as the course progresses.
+
+In this course we will be using the suite of R packages from the **tidyverse**. The book [R For Data Science](https://r4ds.had.co.nz/) by Grolemund and Wickham is a fantastic resource for data analysis in R with the tidyverse. If you are Goggling for R code, make sure to also include these package names in your search query. For example, instead of Goggling "scatterplot in R", Goggle "scatterplot in R with the tidyverse".
+
+These may come in handy throughout the semester:
+
+-   [RMarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
+-   [Data transformation cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
+-   [Data visualization cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
+
+Note that some of the code on these cheatsheets may be too advanced for this course. However the majority of it will become useful throughout the semester.
+
+------------------------------------------------------------------------
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png){style="border-width:0"}</a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

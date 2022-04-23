@@ -1,0 +1,573 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Chapter 4   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Chapter 4">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Slides/Chapter%204/Treatment%20Group/Section%204.2%20Geometric%20Distribution/Section4.2-GeometricDistribution.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Slides/Chapter%204/Treatment%20Group/Section%204.2%20Geometric%20Distribution/Section4.2-GeometricDistribution.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Chapter 4">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Chapter 4
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=F, message=F, warning=F}
+library(readr)
+library(openintro)
+data(COL)
+```
+
+
+# Geometric distribution
+
+## Milgram experiment
+
+\begin{multicols}{2}
+
+\small
+\begin{itemize}
+
+\item Stanley Milgram, a Yale University psychologist, conducted a series of experiments on obedience to authority starting in 1963.
+
+\item Experimenter(E) orders the teacher (T), the subject of the experiment, to give severe electric shocks to a learner (L) each time the learner answers a question incorrectly.
+
+\item The learner is actually an actor, and the electric shocks are not real, but a prerecorded sound is played each time the teacher administers an electric shock.
+
+\end{itemize}
+\normalsize
+
+\columnbreak
+
+\includegraphics[width=1\columnwidth]{milgram.png}
+
+\end{multicols}
+
+## Milgram experiment
+
+- These experiments measured the willingness of study participants to obey an authority figure who instructed them to perform acts that conflicted with their personal conscience.
+
+- Milgram found that about 65% of people would obey authority and give such shocks.
+
+- Over the years, additional research suggested this number is approximately consistent across communities and time.
+
+## Bernouilli random variables
+
+- Each person in Milgram's experiment can be thought of as a **trial**.
+
+- A person is labeled a **success** if she refuses to administer a severe shock, and **failure** if she administers such shock.
+
+- Since only 35% of people refused to administer a shock, **probability of success** is **p = 0.35**.
+
+- When an individual trial has only two possible outcomes, it is called a **Bernoulli random variable**.
+
+## Geometric distribution
+
+\alert{Dr. Smith wants to repeat Milgram's experiments but she only wants to sample people until she finds someone who will not inflict a severe shock. What is the probability that she stops after the first person?}
+
+\centering{P($1^{st}$ person refuses) = 0.35}
+
+## Geometric distribution
+
+\alert{Dr. Smith wants to repeat Milgram's experiments but she only wants to sample people until she finds someone who will not inflict a severe shock. What is the probability that she stops after the first person?}
+
+\centering{P($1^{st}$ person refuses) = 0.35}
+
+\raggedright
+
+\alert{... the third person?}
+
+\centering{P($1^{st}$ and $2^{nd}$ shock, $3^{rd}$ refuses) \\ = $\frac{S}{0.65} \times \frac{S}{0.65} \times \frac{R}{0.35} = 0.65^2 \times 0.35 \approx 0.15$}
+
+## Geometric distribution
+
+\alert{Dr. Smith wants to repeat Milgram's experiments but she only wants to sample people until she finds someone who will not inflict a severe shock. What is the probability that she stops after the first person?}
+
+\centering{P($1^{st}$ person refuses) = 0.35}
+
+\raggedright
+
+\alert{... the third person?}
+
+\centering{P($1^{st}$ and $2^{nd}$ shock, $3^{rd}$ refuses) \\ = $\frac{S}{0.65} \times \frac{S}{0.65} \times \frac{R}{0.35} = 0.65^2 \times 0.35 \approx 0.15$}
+
+\raggedright
+
+\alert{... the tenth person?}
+
+## Geometric distribution
+
+\alert{Dr. Smith wants to repeat Milgram's experiments but she only wants to sample people until she finds someone who will not inflict a severe shock. What is the probability that she stops after the first person?}
+
+\centering{P($1^{st}$ person refuses) = 0.35}
+
+\raggedright
+
+\alert{... the third person?}
+
+\centering{P($1^{st}$ and $2^{nd}$ shock, $3^{rd}$ refuses) \\ = $\frac{S}{0.65} \times \frac{S}{0.65} \times \frac{R}{0.35} = 0.65^2 \times 0.35 \approx 0.15$}
+
+\raggedright
+
+\alert{... the tenth person?}
+
+\centering{P($1$ shocks, $10^{th}$ refuses) \\  = $\underbrace{\frac{S}{0.65} \dots \frac{S}{0.65}} \times \frac{R}{0.35} = 0.65^9 \times 0.35 \approx 0.0072$}
+
+## Geometric distribution
+
+**Geometric distribution** describes the waiting time until a success for **independent and identically distributed (iid)** Bernoulli random variables.
+
+- Independence: Outcomes of trials don't affect each other.
+- Identical: The probability of success is the same for each trial.
+
+## Geometric distribution
+
+**Geometric distribution** describes the waiting time until a success for **independent and identically distributed (iid)** Bernoulli random variables.
+
+- Independence: Outcomes of trials don't affect each other.
+- Identical: The probability of success is the same for each trial.
+
+**Geometric probabilities**
+
+If $p$ represents probability of success, $(1-p)$ represents probability of failure, and $n$ represents number of independent trials
+
+\centering{P(success on the $n^{th}$ trial) = $(1-p)^{n-1}p$}
+
+## Practice
+
+\alert{Can we calculate the probability of rolling a 6 for the first time on the $6^{th}$ roll of a die using the geometric distribution? Note that what was a success (rolling a 6) and what was a failure (not rolling a 6) are clearly defined and one or the other must happen for each trial.}
+
+A) No, on the the roll of a die there are more than 2 possible outcomes.
+B) Yes, why not?
+
+## Practice
+
+\alert{Can we calculate the probability of rolling a 6 for the first time on the $6^{th}$ roll of a die using the geometric distribution? Note that what was a success (rolling a 6) and what was a failure (not rolling a 6) are clearly defined and one or the other must happen for each trial.}
+
+A) No, on the the roll of a die there are more than 2 possible outcomes.
+B) **Yes, why not?**
+
+\centering{P(6 on the $6^{th}$ roll) = $(\frac{5}{6})^5 \cdot (\frac{1}{6}) \approx 0.067$}
+
+## Expected value
+
+\alert{How many people is Dr. Smith expected to test before finding the first one that refuses to administer the shock?}
+
+## Expected value
+
+\alert{How many people is Dr. Smith expected to test before finding the first one that refuses to administer the shock?}
+
+The expected value, or the mean, of a geometric distribution is defined as $\frac{1}{p}$.
+
+\centering{$\mu = \frac{1}{p} = \frac{1}{0.35} = 2.86$}
+
+## Expected value
+
+\alert{How many people is Dr. Smith expected to test before finding the first one that refuses to administer the shock?}
+
+The expected value, or the mean, of a geometric distribution is defined as $\frac{1}{p}$.
+
+\centering{$\mu = \frac{1}{p} = \frac{1}{0.35} = 2.86$}
+
+\raggedright
+
+She is expected to test 2.86 people before finding the first one that refuses to administer the shock.
+
+## Expected value
+
+\alert{How many people is Dr. Smith expected to test before finding the first one that refuses to administer the shock?}
+
+The expected value, or the mean, of a geometric distribution is defined as $\frac{1}{p}$.
+
+\centering{$\mu = \frac{1}{p} = \frac{1}{0.35} = 2.86$}
+
+\raggedright
+
+She is expected to test 2.86 people before finding the first one that refuses to administer the shock.
+
+But how can she test a non-whole number of people?
+
+## Expected value and its variability
+
+Mean and standard deviation of geometric distribution
+
+\centering{$\mu=\frac{1}{p}$ \hspace{1.5cm}  $\sigma = \sqrt{\frac{1-p}{p^2}}$}
+
+## Expected value and its variability
+
+Mean and standard deviation of geometric distribution
+
+\centering{$\mu=\frac{1}{p}$ \hspace{1.5cm}  $\sigma = \sqrt{\frac{1-p}{p^2}}$}
+
+- Going back to Dr. Smith's experiment:
+
+\centering{$\sigma = \sqrt{\frac{1-p}{p^2}}=\sqrt{\frac{1-0.35}{0.35^2}}=2.3$}
+
+## Expected value and its variability
+
+Mean and standard deviation of geometric distribution
+
+\centering{$\mu=\frac{1}{p}$ \hspace{1.5cm}  $\sigma = \sqrt{\frac{1-p}{p^2}}$}
+
+- Going back to Dr. Smith's experiment:
+
+\centering{$\sigma = \sqrt{\frac{1-p}{p^2}}=\sqrt{\frac{1-0.35}{0.35^2}}=2.3$}
+
+- Dr. Smith is expected to test 2.86 people before finding the first one that refuses to administer the shock, give or take 2.3 people.
+
+## Expected value and its variability
+
+Mean and standard deviation of geometric distribution
+
+\centering{$\mu=\frac{1}{p}$ \hspace{1.5cm}  $\sigma = \sqrt{\frac{1-p}{p^2}}$}
+
+- Going back to Dr. Smith's experiment:
+
+\centering{$\sigma = \sqrt{\frac{1-p}{p^2}}=\sqrt{\frac{1-0.35}{0.35^2}}=2.3$}
+
+- Dr. Smith is expected to test 2.86 people before finding the first one that refuses to administer the shock, give or take 2.3 people.
+
+- These values only make sense in the context of repeating the experiment many many times.
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

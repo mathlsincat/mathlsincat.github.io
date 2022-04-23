@@ -1,0 +1,793 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Chapter 3   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Chapter 3">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Slides/Chapter%203/Section%203.1%20Defining%20Probability/Section3.1-DefiningProbability.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Slides/Chapter%203/Section%203.1%20Defining%20Probability/Section3.1-DefiningProbability.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Chapter 3">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Chapter 3
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=F, message=F, warning=F}
+library(readr)
+library(openintro)
+data(COL)
+```
+
+# Defining Probability
+
+## Random processes
+
+\begin{multicols}{2}
+
+\begin{itemize}
+
+\item A \textbf{random process} is a situation in which we know what outcomes could happen, but we don't know which particular outcome will happen.
+
+\item Examples: coin tosses, die rolls, iTunes shuffle, whether the stock market goes up or down tomorrow, etc.
+
+\item{It can be helpful to model a process as random even if it is not truly random.}
+
+\end{itemize}
+
+\columnbreak
+
+\includegraphics[width=1\columnwidth]{iTunes.png}
+
+\end{multicols}
+
+## Probability
+
+- There are several possible interpretations of probability but they (almost) completely agree on the mathematical rules probability must follow.
+
+  \begin{itemize}
+  \item $P(A) = $ Probability of event A
+  \item$0 \leq P(A) \leq 1$
+  \end{itemize}
+
+\pause
+  
+- **Frequentist interpretation:**
+
+  - The probability of an outcome is the proportion of times the outcome would occur if we observed the random process an infinite number of times.
+  
+\pause
+
+- **Bayesian interpretation:**
+
+  - A Bayesian interprets probability as a subjective degree of belief: For the same event, two separate people could have different viewpoints and so assign different probabilities.
+  
+  - Largely popularized by revolutionary advance in computational technology and methods during the last twenty years.
+  
+## Practice
+
+\alert{Which of the following events would you be most surprised by?}
+
+A) Exactly 3 heads in 10 coin flips.
+B) Exactly 3 heads in 100 coin flips.
+C) Exactly 3 heads in 1000 coin flips.
+
+## Practice
+
+\alert{Which of the following events would you be most surprised by?}
+
+A) Exactly 3 heads in 10 coin flips.
+B) Exactly 3 heads in 100 coin flips.
+C) \alert{Exactly 3 heads in 1000 coin flips.}
+
+## Law of large numbers
+
+**Law of large numbers** states that as more observations are collected, the proportion of occurrences with a particular outcome, \textbf{$\hat{p}_n$}, converges to the probability of that outcome, **p**.
+
+## Law of large numbers
+
+\alert{When tossing a fair coin, if heads comes up on each of the 10 tosses, what do you think the chance is that another head will come  up on the next toss? 0.5, less than 0.5, or more than 0.5?}
+
+\centering{\underline{H} \underline{H} \underline{H} \underline{H} \underline{H} \underline{H} \underline{H} \underline{H} \underline{H} \underline{H} \underline{?}}
+
+\pause
+
+- The probability is still 0.5, or there is still a 50% chance that another head will come up on the next toss.
+
+\centering{$P(H \text{ } on \text{ } 11^{th} \text{ } toss) = P(T \text{ } on \text{ } 11^{th} \text{ } toss) = 0.5$}
+
+\pause
+
+- The coin is not "due" for a tail.
+
+\pause
+
+- The common misunderstanding of the LLN is that random processes are supposed to compensate for whatever happened in the past; this is just not true and is also called **gambler's fallacy** (or **law of averages**).
+
+## Disjoint and non-disjoint outcomes
+
+**Disjoint (mutually exclusive) outcomes:** Cannot happen at the same time.
+
+- The outcome of a single coin toss cannot be a head and a tail.
+
+- A student both cannot fail and pass a class.
+
+- A single card drawn from a deck cannot be an ace and a queen.
+
+\pause
+
+**Non-disjoint outcomes:** Can happen at the same time.
+
+- A student can get an A in Stats and A in Econ in the same semester.
+
+## Union of non-disjoint events
+
+\alert{What is the probability of drawing a jack or a red card from a well shuffled full deck?}
+
+\includegraphics[width=1\columnwidth]{cards.png}
+
+\pause
+
+\centering{$P(jack \text{ } or \text{ } red) = P(jack) + P(red) - \textcolor{red}{P(jack \text{ } and \text{ } red)}$}
+
+\centering{$= \frac{4}{52} + \frac{26}{52} - \frac{2}{52} = \frac{28}{52}$}
+
+## Practice
+
+\alert{What is the probability that a randomly sampled student thinks marijuana should be legalized \underline{or} they agree with their parents' political views?}
+
+\begin{table}[]
+\begin{tabular}{cccc}
+            & \multicolumn{2}{c}{Share Parents' Politics} &       \\ \cline{2-3}
+Legalize MJ & No                   & Yes                  & Total \\ \hline
+No          & 11                   & 40                   & 51    \\
+Yes         & 36                   & 78                   & 114   \\ \hline
+Total       & 47                   & 118                  & 165  
+\end{tabular}
+\end{table}
+
+A) $\frac{40+36-78}{165}$
+B) $\frac{114+118-78}{165}$
+C) $\frac{78}{165}$
+D) $\frac{78}{188}$
+E) $\frac{11}{47}$
+
+## Practice
+
+\alert{What is the probability that a randomly sampled student thinks marijuana should be legalized \underline{or} they agree with their parents' political views?}
+
+\begin{table}[]
+\begin{tabular}{cccc}
+            & \multicolumn{2}{c}{Share Parents' Politics} &       \\ \cline{2-3}
+Legalize MJ & No                   & Yes                  & Total \\ \hline
+No          & 11                   & 40                   & 51    \\
+Yes         & 36                   & 78                   & 114   \\ \hline
+Total       & 47                   & 118                  & 165  
+\end{tabular}
+\end{table}
+
+A) $\frac{40+36-78}{165}$
+B) $\textcolor{red}{\frac{114+118-78}{165}}$
+C) $\frac{78}{165}$
+D) $\frac{78}{188}$
+E) $\frac{11}{47}$
+
+## Recap
+
+General addition rule
+
+\centering{P(A \emph{or} B) = P(A) + P(B) - P(A \emph{and} B)}
+
+\raggedright
+
+\noindent\rule{4cm}{0.4pt}
+
+\alert{Note:} For disjoint events P(A _and_ B) = 0, so the above formula simplifies to P(A _or_ B) = P(A) + P(B).
+
+## Probability distributions
+
+A **probability distribution** lists all possible events and the probabilities with which they occur.
+
+   - The probability distribution for the gender of one kid:
+
+\begin{table}[]
+\begin{tabular}{c|c|c}
+Event       & Male & Female \\ \hline
+Probability & 0.5  & 0.5   
+\end{tabular}
+\end{table}
+
+\pause
+
+   - Rules for probability distributions:
+   
+      \begin{enumerate}
+        \item The events listed must be disjoint.
+        \item Each probability must be between 0 and 1.
+        \item The probabilities must total 1.
+      \end{enumerate}
+
+\pause
+  
+  - The probability distribution for the genders of two kids:
+  
+\begin{table}[]
+\begin{tabular}{c|c|c|c|c}
+Event       & MM    & FF    & MF    & FM \\ \hline
+Probability & 0.25  & 0.25  & 0.25  & 0.25
+\end{tabular}
+\end{table}
+  
+## Practice
+
+\alert{In a survey, 52\% of respondents said they are Democrats. What is the probability that a randomly selected respondent from this sample is a Republican?}
+
+A) 0.48
+B) More than 0.48
+C) Less than 0.48
+D) Cannot calculate using only the information given
+
+## Practice
+
+\alert{In a survey, 52\% of respondents said they are Democrats. What is the probability that a randomly selected respondent from this sample is a Republican?}
+
+A) 0.48
+B) More than 0.48
+C) Less than 0.48
+D) \alert{Cannot calculate using only the information given}
+
+If the only two political parties are Republican and Democrat, then A) is possible. However it is also possible that some people do not affiliate with a political party or affiliate with a party other than these two. Then C) is also possible. However B) is definitely not possible since it would result in the total probability for the sample space being above 1.
+
+## Sample space and complements
+
+**Sample space** is the collection of all possible outcomes of a trial.
+
+- A couple has one kid, what is the sample space for the gender of this kid? $S = \{M,F\}$
+
+- A couple has two kids, what is the sample space for the gender of these kids? \pause $S = \{MM,FF,FM,MF\}$
+
+\pause
+
+**Complementary events** are two mutually exclusive events whose probabilities add up to 1.
+
+- A couple has one kid. If we know that the kid is not a boy, what is the gender of this kid? {~~M~~, \alert{F}} $\rightarrow$ Boy and girl are **complementary** outcomes. 
+
+- A couple has two kids, if we know that they are not both girls, what are the possible gender combinations for these kids? \pause \{\alert{MM}, ~~FF~~, \alert{FM, MF}\}.
+
+## Independence
+
+Two processes are **independent** if knowing the outcome of one provides no useful information about the outcome of the other.
+
+\pause
+
+- Knowing that the coin landed on a head on the first toss \underline{does not} provide any useful information for determining what the coin will land on in the second toss. $\rightarrow$ Outcomes of two tosses of a coin are independent.
+
+\pause
+
+- Knowing that the first card drawn from a deck is an ace \underline{does} provide useful information for determining the probability of drawing an ace in the second draw. $\rightarrow$ Outcomes of two draws from a deck of cards (without replacement) are dependent.
+
+## Practice
+
+\alert{Between January 9\-12, 2013, SurveyUSA interviewd a random sample of 500 NC residents asking them whether they think widespread gun ownership protects law abiding citizens from crime, or makes society more dangerous. 58\% of all respondents said it protects citizens. 67\% of White respondents, 28\% of Black respondents, and 64\% of Hispanic respondents shared this view. Which of the below is true?}
+
+Opinion on gun ownership and race ethnicity are most likely
+
+A) Complementary
+B) Mutually Exclusive
+C) Independent
+D) Dependent
+E) Disjoint
+
+## Practice
+
+\alert{Between January 9\-12, 2013, SurveyUSA interviewd a random sample of 500 NC residents asking them whether they think widespread gun ownership protects law abiding citizens from crime, or makes society more dangerous. 58\% of all respondents said it protects citizens. 67\% of White respondents, 28\% of Black respondents, and 64\% of Hispanic respondents shared this view. Which of the below is true?}
+
+Opinion on gun ownership and race ethnicity are most likely
+
+A) Complementary
+B) Mutually Exclusive
+C) Independent
+D) \alert{Dependent}
+E) Disjoint
+
+## Checking for independence
+
+If P(A occurs, given that B is true) = P(A|B) = P(A), then A and B are independent.
+
+\pause
+
+P(protects citizens) = 0.58
+
+\pause
+
+P(randomly selected NC resident says gun ownership protects citizens given the resident is white) = 
+
+P(protects citizens | White) = 0.67
+
+P(protects citizens | Black) = 0.28
+
+P(protects citizens | Hispanic) = 0.64
+
+\pause
+
+P(protects citizens) varies by race/ethnicity, therefore opinion on gun ownership and race ethnicity are most likely dependent.
+
+## Determining dependence based on sample data
+
+- If conditional probabilities calculated based on sample data suggest dependence between two variables, the next step is to conduct a hypothesis test to determine if the observed difference between the probabilities is likely or unlikely to have by chance.
+
+- If the observed difference between the conditional probabilities is large, then there is stronger evidence that the difference is real.
+
+- If a sample is large, then even a small difference can provide strong evidence of a real difference.
+
+\pause
+
+\alert{We saw that P(protects citizens | White) = 0.67 and P(protects citizens | Hispanic) = 0.64. Under which condition would you be more convinced of a real difference between the proportions of Whites and Hispanics who think widespread gun owneship protects citizens? n = 500 or n = 50,000}
+
+
+## Product rule for independent events
+
+\centering{P(A and B) = P(A) \times P(B)}
+
+Or more generally, $P(A_1 \text{ }and \dots and \text{ }A_k) = P(A_1) \times \dots \times P(A_k)$
+
+\pause
+
+\raggedright\alert{You toss a coin twice, what is the probability of getting two tails in a row?}
+
+\pause
+
+$P(\text{T on the first toss}) \times P(\text{T on the second toss}) = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$
+
+## Practice
+
+\alert{A recent Gallup poll suggests that 25.5\% of Texans do not have health insurance as of June 2012. Assuming that the uninsured rate stayed constant, what is the probability that two randomly selected Texans are both uninsured?}
+
+\begin{multicols}{2}
+
+A) $25.5^2$ \\
+B) $0.255^2$ \\
+C) $0.255 \times 2$ \\
+D) $(1-0.255)^2$ 
+
+\columnbreak
+
+\includegraphics[width=1\columnwidth]{uninsured.jpg}
+
+\end{multicols}
+
+## Practice
+
+\alert{A recent Gallup poll suggests that 25.5\% of Texans do not have health insurance as of June 2012. Assuming that the uninsured rate stayed constant, what is the probability that two randomly selected Texans are both uninsured?}
+
+\begin{multicols}{2}
+
+A) $25.5^2$ \\
+B) $\textcolor{red}{0.255^2}$ \\
+C) $0.255 \times 2$ \\
+D) $(1-0.255)^2$
+
+\columnbreak
+
+\includegraphics[width=1\columnwidth]{uninsured.jpg}
+
+\end{multicols}
+
+## Disjoint vs. Complementary
+
+\alert{Do the sum of probabilities of two disjoint events always add up to 1?}
+
+\pause
+
+Not necessarily, there may be more than 2 events in the sample space, e.g. Party affiliation.
+
+\pause
+
+\alert{Do the sum of probabilities of two complementary events always add up to 1?}
+
+\pause
+
+Yes, that's the definition of complementary, e.g. Heads and Tails.
+
+## Putting everything together...
+
+\alert{If we were to randomly select 5 Texans, what is the probability that at least one is uninsured?}
+
+- If we were to randomly select 5 Texans, the sample space for the number of Texans who are uninsured would be: 
+
+\centering{$S = \{0,1,2,3,4,5\}$}
+
+- We are interested in instances where at least one person is uninsured:
+
+\centering{$S = \{0,\textcolor{red}{1,2,3,4,5}\}$}
+
+- So we can divide up the sample space into two categories:
+
+\centering{$S = \{0, \textcolor{red}{\text{at least one}}\}$}
+
+## Putting everything together...
+
+Since the probability of the sample space must add up to 1:
+
+\begin{eqnarray*}
+\text{Prob(at least 1 uninsured)} &=& 1 - \text{Prob(none insured)}\\ \pause
+&=& 1 - [(1-0.255)^5] \\ \pause
+&=& 1 - 0.745^5 \\ \pause
+&=& 1 - 0.23 \\ \pause
+&=& 0.77\\
+\end{eqnarray*}
+
+## Practice
+
+\alert{Roughly 20\% of undergraduates at a university are vegetarian or vegan. What is the porbability that, among a random sample of 3 undergraduates, at least one is vegetarian or vegan?}
+
+A) $1-0.2 \times 3$
+B) $1-0.2^3$
+C) $0.8^3$
+D) $1-0.8 \times 3$
+E) $1-0.8^3$
+
+## Practice
+
+\alert{Roughly 20\% of undergraduates at a university are vegetarian or vegan. What is the porbability that, among a random sample of 3 undergraduates, at least one is vegetarian or vegan?}
+
+\begin{multicols}{2}
+
+A) $1-0.2 \times 3$ \\
+B) $1-0.2^3$ \\
+C) $0.8^3$ \\
+D) $1-0.8 \times 3$ \\
+E) $\textcolor{red}{1-0.8^3}$ \\
+
+\columnbreak
+
+$\text{P(at least 1 from veg)}$\\
+$= 1 - \text{P(none veg)}$ \\
+$= 1 - (1 - 0.2)^3$ \\
+$= 1 - 0.8^3$ \\
+$= 1 - 0.512$ \\
+$= 0.488$
+
+\end{multicols}
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

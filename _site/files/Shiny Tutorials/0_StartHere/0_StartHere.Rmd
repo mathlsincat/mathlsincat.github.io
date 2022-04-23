@@ -1,0 +1,433 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Topic 0: Start Here (an Introduction)   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Topic 0: Start Here (an Introduction)">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Shiny%20Tutorials/0_StartHere/0_StartHere.Rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Shiny%20Tutorials/0_StartHere/0_StartHere.Rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Topic 0: Start Here (an Introduction)">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Topic 0: Start Here (an Introduction)
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(learnr)
+library(gradethis) #remotes::install_github("rstudio/gradethis")
+library(learnrhash) #devtools::install_github("rundel/learnrhash")
+```
+
+
+## Welcome
+
+###
+
+This is a series of workbooks appropriate for use with any introductory-level applied statistics class at the high school or university level. 
+
+###
+
+Very limited mathematics background is assumed. In fact, if you can answer the following two questions, you have the necessary mathematics background:
+
++ Find $z$ if 
+$$\displaystyle{z = \frac{54 - 50}{8/\sqrt{16}}}$$
++ Find $x$ if 
+$$\displaystyle{2 = \frac{x - 50}{8/\sqrt{16}}}$$
+
+###
+
+Each workbook introduces statistics content and allows the user to interact with embedded R code blocks to complete example problems or to experiment with the ideas presented. For all but the workbooks which are designated as *labs*, users can complete all of the tasks without using R -- it is typically possible to enter only answers obtained in the code blocks, so students can engage with these notebooks using only a calculator and/or distribution tables. That is, even if your course does not utilize R, you may find these workbooks to be of use. That being said, I would encourage everyone to use some sort of software in applied statistics coursework -- especially software that is freely, or at least widely, available.
+
+###
+
+If you've found these workbooks, I truly hope that you find them helpful. These workbooks are adapted versions of my course notes from introductory statistics courses for first-year students at my current institution. Much of the content is supplementary to [OpenIntro.org](http://www.openintro.org) and the [4th edition of OpenIntro Statistics](https://leanpub.com/openintro-statistics) which is open source and freely available. In addition to the free resources available at OpenIntro.org, I've developed a freely available online homework supplement to the OpenIntro Statistics textbook at [MyOpenMath](www.myopenmath.com) -- instructions for gaining access are available from OpenIntro.org. While most of the content does leverage content found at the OpenIntro site and text, the workbook on Data Visualization is adapted from Chapter 3 of [Grolemund and Wickham's *R for Data Science*](https://r4ds.had.co.nz/), which is an excellent addition to the library of any aspiring data scientist. If you have not found it already, please check it out.
+
+###
+
+In addition to the resources mentioned here, there are several other great resources for introductory statistics and data science. Just a few are [data8](http://data8.org/) a freely available *Foundations of Data Science* course at UC Berkeley (using Python), [Introduction to Modern Statistics](https://openintro-ims.netlify.app/preface.html) by Mine &Ccedil;etinkaya-Rundel and Jo Hardin, [Modern Dive](https://moderndive.com/index.html) by Albert Kim and Chester Ismay, and [Data Science in a Box](https://datasciencebox.org/index.html) by Mine &Ccedil;etinkaya-Rundel. I hope you'll check these free resources out.
+
+### 
+
+If you have any questions/comments or wish to report any errors in these workbooks, please email [Adam Gilbert (*a.gilbert1@snhu.edu*)](mailto:a.gilbert1@snhu.edu). These workbooks are publicly available on [GitHub](https://github.com/agmath/AppliedStatsInteractive) and are available to run locally via an R package as follows:
+
+```{r install, echo = TRUE, eval = FALSE}
+#You'll need the devtools library to install a package from GitHub
+install.packages("devtools")
+#Now, install the package containing the interactive workbooks
+remotes::install_github("agmath/AppliedStatsInteractive")
+```
+
+###
+
+Once you've installed the package, you should be able to run the tutorials using the `Tutorials` pane, which occupies the same location as your `Global Environment` in R (the top-right pane, by default). Identify the tutorial you'd like to run and click `Start Tutorial`. If you run into any issues here, you may need to install `learnrhash` manually before running the tutorials. You can do so by typing `remotes::install_github("rundel/learnrhash")` in the console and running it. After this package has installed, the workbooks should run.
+
+### What should I know before using these?
+
+###
+
+If you are considering whether to use these notebooks as part of a course or self-study, there are a few things you should know.
+
++ It is my intention that these notebooks always remain freely available and open source.
+
++ Although these notebooks are currently in a usable format, they are still being improved. Be sure to check GitHub for the latest changes and release notes. 
+
+  + Depending on the date which you or students install the `AppliedStatsInteractive` package, the individual installing at a later date may notice additional features. For example, I am working on creating/curating, and embedding more video instruction.
+
++ The `learnrhash` package provides some ability for student progress tracking through these workbooks. At the end of each workbook there is a subsection called *Submit*, which includes a button for students to generate a `hash` code which represents their completed notebook. They can submit these hash codes using a web-based form such as Google Forms. Once you have the csv with the hashes, you can read it into R and use `learnrhash` functionality to reconstruct the student work. See the `learnrhash` documentation [here](https://github.com/rundel/learnrhash).
+
+###
+
+If you are looking for a more traditional online homework system to supplement these workbooks, check out my course template at [MyOpenMath](https://www.myopenmath.com) -- the template course you are looking for is titled `146 OpenIntro Statistics: Diez/Barr/Cetinkaya-Rundel`.
+  
++ If you are accessing these notebooks from a web-browser via the Amazon EC2 instance, know that they are hosted on a *free-tiered* server. This means that you may encounter poor performance or that the notebooks may become unavailable if usage surpasses the free compute time allotment in a particular month. It is better to run these notebooks via the R package.
+  
+  + You can install R by going to [CRAN](https://cran.r-project.org/), choosing the appropriate OS, and following the installer instructions.
+  + While not necessary for running these notebooks, you will want to obtain RStudio which is a convenient IDE for interfacing with the R language. You can get it from the [RStudio website](https://rstudio.com/products/rstudio/download/). Again, choose the appropriate OS and follow the installer instructions.
+  + Open RStudio, and in the console, run `install.packages("devtools")`
+  + After `devtools` is unpacked, run `remotes::install_github("agmath/AppliedStatsInteractive")`
+  + At this point, the `Tutorials` tab in the top-right pane will begin to index the workbooks in the `AppliedStatsInteractive` package. In a few minutes the indexing will be complete and you'll be able to use the `Start Tutorial` button next to each notebook name to launch the notebook.  
+
+###
+
+Whether you are an instructor, student, or self-paced-learner, I hope you enjoy your statistics journey.
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,767 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Topic 4: Data Visualization and a Grammar of Graphics   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Topic 4: Data Visualization and a Grammar of Graphics">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Shiny%20Tutorials/4_DataViz/4_DataViz.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Shiny%20Tutorials/4_DataViz/4_DataViz.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Topic 4: Data Visualization and a Grammar of Graphics">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Topic 4: Data Visualization and a Grammar of Graphics
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+#knitr::opts_chunk$set(eval = FALSE)
+#library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(stringr)
+library(learnr)
+library(gradethis) #remotes::install_github("rstudio/gradethis")
+library(learnrhash) #devtools::install_github("rundel/learnrhash")
+
+tutorial_options(exercise.timelimit = 60, exercise.checker = gradethis::grade_learnr)
+
+data <- data.frame("FuelType" = c("F1", "F1", "F1", "F2", "F2", "F2"), "EngineBrand" = c("E1", "E2", "E3", "E1", "E2", "E3"))
+```
+
+If you've never coded before (or even if you have), type `print("Your Name")` in the interactive R chunk below and run it by hitting `crtl+Enter` or `cmd+Enter` for MAC users.
+
+```{r Student-Name, exercise = TRUE}
+
+```
+
+## Topic 4: Data Visualization
+
+Through this workbook you'll learn techniques for data visualization. You'll think about how the type of plot chosen impacts what information is conveyed (or lost). Choosing the wrong plot type can result in a useless plot (at best) or even a plot which is misleading. Think about the *types* (numerical, categorical) of variables you are working with and how they dictate which plot type should be utilized -- for example, a scatterplot is not appropriate in every scenario!
+
+###
+
+### Objectives
+
+**Workbook Objectives:** After completing this workbook you should be able to:
+
++ Read a plot, describe any interesting features, and accurately convey the *story* being told by the plot.
++ Identify and utilize the most appropriate plot types for your scenario by identifying the types of variables you are working with.
++ Utilize color, size, and shape to show additional dimensions of data in a plot, but also recognize that adding more information to a plot negatively impacts our ability to read the graphic. 
++ Use your newfound knowledge of data visualization to generate informative plots which uncover a compelling (and truthful) story about the relationships that exist between variables.
+
+###
+
+### The Grammar of Graphics
+
+###
+
+**Grammar of Graphics:** Jeffrey Gitomer said "Your grammar is a reflection of your image". Here, we take the converse literally. Your image is a reflection of your grammar. Just like a well-written sentence follows the rules of grammar, so does an informative statistical graphic.
+
+* Graphics need a subject (an underlying dataset)
+* Graphics need verbs (a type of plotting structure, called a `geom`)
+* Graphics need adjectives (attributes attached to the visualized data, called `aesthetics`)
+* Graphics need context (a title, scales, axes, legends, etc.)
+
+In this workbook we explore `ggplot2` and think about graphics in terms of their layered grammar. 
+
+###
+
+**A Note on Plots:** Choosing an appropriate plot is extremely important in data visualization. Some plots don't make sense for certain variable types. For example, a scatterplot in the case of two-categorical predictors is quite a silly choice -- the only thing this plot tells us is that every combination of fuel type and engine brand exists in our dataset. We have no idea which combinations are most or least popular. 
+
+```{r echo = FALSE, eval = TRUE, fig.width = 2.25, fig.height = 2.25}
+ggplot(data = data) + geom_point(mapping = aes(x = FuelType, y = EngineBrand), size = 2) + ylab("Engine Brand") + xlab("Fuel Type")
+```
+
+###
+
+The following are some recommended [basic] plots types under certain scenarios:
+
+  + A single numerical variable: A histogram, boxplot, violinplot
+  + A single categorical variable: A bar plot
+  + Numerical versus Numerical: a scatterplot, heatmap
+  + Numerical versus categorical: side-by-side boxplots, side-by-side violinplots, stacked or overlayed histograms
+  + Categorical versus categorical: barplot with fill color, mosaic plot, heatmap
+
+```{r need-for-spread, echo = FALSE}
+question_checkbox(
+  "Which of the following plot types would have been a better choice to display the engine brand and fuel type data?",
+  answer("A histogram"),
+  answer("A barplot with fill color", correct = TRUE),
+  answer("A heatmap", correct = TRUE),
+  answer("A dotplot"),
+  answer("Side-by-side boxplots"),
+  allow_retry = TRUE
+)
+```
+
+### Getting Started: Exploring Data
+
+Throughout this workbook, we will explore fuel efficiencies of multiple classes of vehicles using the `mpg` data frame.
+
+1. Remember that a *data frame* is like an Excel spreadsheet. Explore the `mpg` data frame by typing `mpg` in the following code block and running it.
+
+```{r print-mpg-dataframe, exercise = TRUE}
+
+```
+
+```{r print-mpg-dataframe-solution, include = FALSE}
+mpg
+```
+
+```{r print-mpg-dataframe-check, include = FALSE}
+grade_code()
+```
+
+###
+
+Notice that when you execute a line of code which just calls the name of a data frame, a snippet of that data frame is printed out. This is true for other objects (variables, vectors, functions, etc) in R as well.
+
+###
+
+**Some Basic Exploratory Functions:** It is useful to know more about your dataset when you first start working with data. R has a few exploratory functions which you should know about: `names(mpg)` prints out a list of names of your data frame's columns, `head(mpg)` will show you the first six rows of the `mpg` dataset, `dim(mpg)` will show you the number of rows and columns in the dataset, and `glimpse(mpg)` will show you information about how R is treating the columns (`int` and `num` denote numerical values while `chr` and `fct` represent character strings and categorical variables respectively). Use the code block below to try each of these functions and use the output to answer the following questions:
+
+```{r explore-mpg-dataframe, exercise = TRUE}
+
+```
+
+```{r mpg-basic-description, echo = FALSE}
+quiz(
+  question_radio(
+    "How many variables are contained in the mpg dataset?",
+    answer("1"),
+    answer("11", correct = TRUE),
+    answer("234"),
+    answer("245"),
+    answer("2574"),
+    allow_retry = TRUE
+  ),
+  
+  question_radio(
+    "How many observations (records) are contained in the mpg dataset?",
+    answer("1"),
+    answer("11"),
+    answer("234", correct = TRUE),
+    answer("245"),
+    answer("2574"),
+    allow_retry = TRUE
+  ),
+  
+  question_checkbox(
+    "Which of the variables is R interpreting as numerical?",
+    answer("manufacturer"),
+    answer("model"),
+    answer("displ", correct = TRUE),
+    answer("cyl", correct = TRUE),
+    answer("trans"),
+    answer("drv"),
+    answer("cty", correct = TRUE),
+    answer("hwy", correct = TRUE),
+    answer("fl"),
+    answer("class"),
+    allow_retry = TRUE
+  )
+)
+```
+
+###
+
+The `diamonds` data frame is also available to you. See if you can get your basic exploratory functions to help you answer the same questions about the `diamonds` dataset using the code block below.
+
+```{r explore-diamonds, exercise = TRUE}
+
+```
+
+Were you able to obtain the information you were looking for? Be sure to ask a question if not!
+
+### Building and interpreting plots
+
+The code below creates a plot of highway miles per gallon (`hwy`) against engine displacement `displ` (a measure of the size of an engine).
+```{r echo=TRUE, eval=TRUE, message = FALSE, warning = FALSE, results = FALSE}
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy))
+```
+
+Use the plot above to answer the following questions.
+
+```{r interpret-displ-hwy-plot, echo = FALSE}
+quiz(
+  question_radio(
+    "Which of the following is true?",
+    answer("Highway miles per gallon and engine displacement are independent"),
+    answer("Highway miles per gallon and engine displacement are associated", correct = TRUE),
+    answer("It is impossible to tell whenther the variables are associated or independent"),
+    answer("Highway miles per gallon and engine displacement are both independent and associated", message = "pairs of variables are either independent (share no relationship) or are associated (share some general relationship)"),
+    allow_retry = TRUE
+  ),
+  
+  question_radio(
+    "Describe the relationship between highway miles per gallon and engine displacement",
+    answer("Engine displacement and highway miles per gallon share a negative, linear relationship"),
+    answer("Engine displacement and highway miles per gallon share a positive, linear relationship"),
+    answer("Engine displacement and highway miles per gallon share a negative, non-linear relationship", correct = TRUE),
+    answer("Engine displacement and highway miles per gallon share a positive, non-linear relationship"),
+    allow_retry = TRUE
+  ),
+  
+  question_radio(
+    "Which is the best practical interpretation of the plot?",
+    answer("Generally, engines with higher displacement are associated with lower average highway miles per gallon ratings", correct = TRUE),
+    answer("Generally, engines with higher displacement are associated with higher average highway miles per gallon ratings"),
+    answer("Higher engine displacement causes lower average highway miles per gallon ratings", message = "Be careful. Can you find a pair of vehicles in the plot where the one with a larger level of displacement has higher fuel economy? In general, we need to be very careful about statements of cause and effect -- they can only be made if very strict requirements are satisfied."),
+    answer("Engine displacement causes higher average highway miles per gallon ratings"),
+    allow_retry = TRUE
+  )
+)
+```
+
+###
+
+**A Note on Plotting Structure:** Using `ggplot()` to create plots in R is daunting at first, but with practice you will notice the structure is very consistent and convenient!
+
++ Our plot consists of at least two pieces (subject and verb), `ggplot(data = mpg)` tells `ggplot` that the subject of our plot is the data contained in the `mpg` table, while the `geom_point()` verb tells `ggplot` that we want our data displayed as points (a scatterplot). The `aes()` inside of `geom_point()` tells `ggplot` some of the adjectives for each individual observation -- here, just the location!
++ In general a simple plot takes the form below -- (where the objects in all caps are replaced by your data frame, desired geometry type, and aesthetic mappings).
+
+<center> `ggplot(data = DATA) + geom_TYPE(mapping = aes(MAPPINGS))` </center>
+
+###
+
+Use the code block below to make a scatterplot of average city miles per gallon (`cty`) explained by engine displacement (`displ`).
+
+```{r plot-displ-cty, exercise = TRUE}
+
+```
+
+```{r plot-displ-cty-solution}
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = cty))
+```
+
+```{r plot-displ-cty-check}
+grade_code()
+```
+
+###
+
+Now make a scatterplot of average highway miles per gallon (`hwy`) exlained by number of cylinders (`cyl`).
+
+```{r plot-hwy-cyl, exercise = TRUE}
+
+```
+
+###
+
+Notice that this plot isn't very useful because the cylinders variable takes on very few levels. We may be better off if we treat `cyl` as if it were a categorical variable here. Check out some of the other geometry layers available to you in ggplot [here](https://ggplot2.tidyverse.org/reference/). Try building a set of side-by-side boxplots. If you get an error, be sure to read it -- R suspects that the plot produced wasn't the one you wanted and provides a suggestion.
+
+```{r boxplot-hwy-cyl, exercise = TRUE}
+
+```
+
+```{r boxplot-hwy-cyl-solution}
+ggplot(data = mpg) + geom_boxplot(mapping = aes(x = cyl, y = hwy, group = cyl))
+```
+
+```{r boxplot-hwy-cyl-check}
+grade_code()
+```
+
+###
+
+Consider the variables for vehicle class (`class`) and drive type (`drv`) as you answer the following questions. 
+
+```{r plot-class-drv-basics, echo = FALSE}
+quiz(
+  question_radio(
+    "Why would a scatterplot not be an appropriate visual to use with these two variables?",
+    answer("Trick question -- a scatterplot is always appropriate"),
+    answer("At least one of the two variables is not numerical", correct = TRUE),
+    answer("A scatterplot would be okay but there are better options"),
+    answer("There isn't enough data for a scatterplot"),
+    allow_retry = TRUE
+  ),
+  
+  question_checkbox(
+    "Which of the following plot types would be appropriate for building a visual with the class and drive type variables?",
+    answer("A histogram"),
+    answer("A side-by-side boxplot"),
+    answer("A bar graph with fill color", correct = TRUE),
+    answer("A heatmap", correct = TRUE),
+    answer("A mosaicplot", correct = TRUE),
+    allow_retry = TRUE,
+    random_answer_order = TRUE
+  )
+)
+```
+
+Use the code block below to make a useful plot of `class` using `geom_bar()` with the aesthetics `x = class` and `fill = drv`. Think about the plot you create -- what does it tell you?
+
+```{r barplot-class-drv, exercise = TRUE}
+
+```
+
+```{r barplot-class-drv-solution}
+ggplot(data = mpg) + geom_bar(mapping = aes(x = class, fill = drv))
+```
+
+```{r barplot-class-drv-check}
+grade_code()
+```
+
+###
+
+**Note:** There are many different geom types, and different aesthetic properties which can be passed to geoms. We will see examples throughout the rest of this workbook, but reading the entirety of Chapter 3 in Hadley Wickham's [R for Data Science](http://r4ds.had.co.nz/data-visualisation.html) would be a great start for those of you who are more interested in data visualization.
+
+### Plotting more than two variables at once
+
+Let's go back to our original plot of `hwy` versus `displ`. Maybe we want to color the points in the scatterplot according to the class of the vehicle. Add a third asthetic, `color = class` to the code below and re-run the plot.
+
+```{r hwy-displ-class-plot, exercise = TRUE, exercise.eval = TRUE}
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy))
+```
+
+```{r hwy-displ-class-plot-solution}
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = class))
+```
+
+```{r hwy-displ-class-plot-check}
+grade_code()
+```
+
+###
+
+There's a lot going on here, and it is hard to read. Try copying the above plotting command, but appending `facet_wrap(~ class, nrow = 2)` as a new layer to the plot -- notice that plot layers are added with the `+` symbol. Again, think about the resulting plot and how it compares to your previous colored plot.
+
+```{r facet-wrapped-plot, exercise = TRUE}
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = class))
+```
+
+```{r facet-wrapped-plot-solution}
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = class)) + facet_wrap(~ class, nrow = 2)
+```
+
+```{r facet-wrapped-plot-check}
+grade_code()
+```
+
+###
+
+```{r understand-nrow-arg, echo = FALSE}
+question_radio(
+  "What does setting the argument `nrow = 2` do? Don't guess -- think about how you can determine what the nrow argument here does.",
+  answer("It is impossible to tell"),
+  answer("It tells the ggplot to only use half the data so that plots are less cluttered"),
+  answer("It tells R to try arranging the plots into two rows", correct = TRUE),
+  answer("It tells R to include two plots per row"),
+  answer("Nothing -- it is irrelevant and ignored"),
+  allow_retry = TRUE
+)
+```
+
+### Categorical Variables
+
+We've seen plots for categorical variables earlier in this workbook. Let's revisit a barplot with fill, similar to the one we constructed between `class` and `drv` earlier and check two alternative plots which give different insights. We'll explore the transmission variable (I've stored a more usable version of the `trans` variable as `trans2`) and the drive variable (`drv`).
+
+```{r engineer-trans2, echo = TRUE, eval = TRUE}
+mpg_with_trans <- mpg
+mpg_with_trans$trans2 <- str_sub(mpg_with_trans$trans, 1, -5)
+```
+
+We'll switch to using the `mpg_with_trans` data frame for the rest of this notebook.
+
+###
+
+From the plot below we can tell that there are about twice as many vehicles in our dataset with automatic transmissions as there are with manual transmissions. The problem is that it is difficult to compare the proportions of drive types within each of these classes. We can fix this by using the position argument. Outside of `aes()` but still within `mapping()` add an argument `position = "fill"` to the pre-built plot -- you'll need to include a comma after `aes()` since commas separate arguments. Think about what is gained and lost in this new plot.
+
+```{r trans-drv-plot, exercise = TRUE, exercise.eval = TRUE}
+ggplot(data = mpg_with_trans) + geom_bar(mapping = aes(x = trans2, fill = drv))
+```
+
+```{r trans-drv-plot-solution}
+ggplot(data = mpg_with_trans) + geom_bar(mapping = aes(x = trans2, fill = drv), position = "fill")
+```
+
+```{r trans-drv-plot-check}
+grade_code()
+```
+
+###
+
+Great! But the problem now is that we've lost the idea that there are more automatic vehicles than there are manual vehicles in this dataset. As a third option, we can consider a mosaic plot.
+
+```{r echo = TRUE, eval = TRUE}
+mosaicplot(mpg_with_trans$trans2 ~ mpg_with_trans$drv, main = "Transmission and Drive Types")
+```
+
+The advantage to the mosaic plot is that it contains all of the information from the two separate plots above, but it is all combined into one plot! We've built a visualization that manages to convey that the proportion of manual vehicles in our dataset outweighs the proportion of automatics, and we can also compare the distribution of drive types within each of these two classes. Notice, however, that the syntax for the mosaic plot is not like the `ggplot()` syntax we've been experimenting with throughout this workbook.
+
+### Submit
+
+```{r context="server"}
+learnrhash::encoder_logic(strip_output = TRUE)
+```
+
+```{r encode, echo=FALSE}
+learnrhash::encoder_ui(
+  ui_before = shiny::div(
+    "If you have completed this tutorial and are happy with all of your",
+    "solutions, please click the button below to generate your hash and",
+    "submit it using the corresponding tutorial assignment tab on Blackboard",
+    shiny::tags$br()
+  ), 
+  ui_after = shiny::tags$a(href = "https://blackboard.ncat.edu/", "NCAT Blackboard")
+)
+```
+
+### Summary
+
+###
+
+Congratulations! You made it through a first discussion on data visualization. You should know, however, that this is just the "tip of the iceberg" -- there's much more to learn. I've already suggested the Data Visualization chapter of Hadley Wickham's *R for Data Science*, but he also has an entire book devoted to the `ggplot2` package in R -- check it out if you are interested in learning more!
+
+###
+
+In this workbook you learned the following:
+
++ Variable types dictate the kinds of plots which can be used to create effective visuals. Always consider your variable types!
++ Plotting with `ggplot()` follows a *grammar of graphics* and layered plotting structure, with "`+`" separating each plot layer. The structure of a `ggplot` is as follows:
+<center> `ggplot(data = DATA) + geom_TYPE(mapping = aes(MAPPINGS))`</center>
++ There are entire courses devoted to data visualization. You've had a crash course here but there is much more to be learned. Check out the two Wickham books, use the `ggplot2` [documentation](https://ggplot2.tidyverse.org/reference/), or check out [this cheatsheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) for more inspiration!
+
+###
+
+**A final note:** These interactive workbooks allow me to hide some of the setup requirements from you so that we can focus on the task at hand -- in this workbook, plotting. When you make the switch to using a standalone R instance you'll need to install and load libraries to expand R's functionality. You can do this with the `install.packages()` and `library()` functions. You would need the `ggplot2` or `tidyverse` libraries to run the code for this workbook in a local R session.
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

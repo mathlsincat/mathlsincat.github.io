@@ -1,0 +1,650 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Chapter 6   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Chapter 6">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Slides/Chapter%206/Section%206.2%20Difference%20of%20Two%20Proportion/Section6.2-DifferenceOfTwoPorportion.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Slides/Chapter%206/Section%206.2%20Difference%20of%20Two%20Proportion/Section6.2-DifferenceOfTwoPorportion.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Chapter 6">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Chapter 6
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=F, message=F, warning=F}
+library(readr)
+library(openintro)
+library(here)
+library(tidyverse)
+data(COL)
+```
+
+# Difference of two proportions
+
+## Melting ice cap
+
+\alert{Scientists predict that global warming may be have big effects on the polar regions within the next 100 years. One of the possible effects is that the northern ice cap may completely melt. Would this bother you a great deal, some, a little, or not at all if it actually happened?}
+
+A) A great deal
+
+B) Some
+
+C) A little
+
+D) Not at all
+
+## Results from the GSS
+
+The GSS asks the same question, below are the distributions of responses from the 2020 GSS as well as from a group of introductory statistics students at Duke University:
+
+\begin{center}
+\begin{tabular}{l r r}
+\hline
+				& GSS	& Duke \\
+\hline
+A great deal		& 454	& 69 \\
+Some			& 124 	& 30\\
+A little			& 52 		& 4\\
+Not at all			& 50 		& 2 \\
+\hline
+Total				& 680 	& 105\\
+\hline
+\end{tabular}
+\end{center}
+
+## Parameter and point estimate
+
+- **Parameter of interest:** Difference betweenm the proportions of **all** Duke students and **all** Americans who would be bothered a great deal by the northern ice cap completely melting.
+
+\centering{$p_{Duke}-p_{US}$}
+
+- **Point estimate:** Difference between the proportions of **sampled** Duke students and **sampled** Americans who would be bothered a great deal by the northern ice cap completely melting.
+
+$\hat{p}_{Duke}-\hat{p}_{US}$
+
+## Inference for comparing proportions
+
+- The details are the same as before...
+
+- CI: $\textcolor{red}{point \text{ }estimate \pm margin \text{ }of \text{ }error}$.
+
+- HT: Use $\textcolor{red}{Z = \frac{point \text{ }estimate- null \text{ }value}{SE}}$ to find appropriate p-value.
+
+- We just need the appropriate standard error of the point estimate ($SE_{\hat{p}_{Duke} - \hat{p}_{US}}$). which is the only new concept.
+
+**Standard error of the difference between two sample proportions**
+
+\centering{$SE_{(\hat{p}_1-\hat{p}_2)} = \sqrt{\frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}}$}
+
+## Conditions for CI for difference of proportions
+
+- **Independence within groups:**
+
+  - The US group is sampled randomly and we're assuming that the Duke group represents a random sample as well.
+  
+  - 105 < 10% of all Duke students and 680 < 10% of all Americans.
+  
+  We can assume that the attitudes of Duke students in the sample are independent of each other, and attitudes of US residents in the sample are independent of each other as well.
+  
+- **Independence between groups:** The sampled Duke students and the US residents are independent of each other.
+
+- **Success-Failure:** At least 10 observed successes and 10 observed failures in the two groups.
+
+
+## Practice
+
+\alert{Construct 95\% confidence interval for the difference between the proportions of Duke students and Americans who would be bothered a great deal by melting of the northern cap. Which sample proportion ($\hat{p}_{Duke}$ or $\hat{p}_{US}$) the pooled estimate is closer to? Why?}
+
+\begin{center}
+\begin{tabular}{l | c c}
+Data			& Duke		& US \\
+\hline
+A great deal	& 69			& 454 \\
+Not a great deal& 36			& 226 \\
+\hline
+Total			& 105		& 680 \\
+\hline
+\pause
+$\hat{p}$		& 0.657		& 0.668
+\end{tabular}
+\end{center}
+
+\small
+\begin{eqnarray*}
+&& (\hat{p}_{Duke} - \hat{p}_{US}) \pm z^\star \times \sqrt{ \frac{ \hat{p}_{Duke} (1 - \hat{p}_{Duke})}{n_{Duke} } + \frac{ \hat{p}_{US} (1 -  \hat{p}_{US})}{n_{US} } }  \\
+\pause
+&=& (0.657 - 0.668) \pause \pm 1.96 \pause \times \sqrt{ \frac{0.657 \times 0.343}{105} + \frac{0.668 \times 0.332}{680} } \\
+\pause
+&=& -0.011 \pm \pause 1.96 \times 0.0497 \pause = -0.011 \pm 0.097 \pause = (-0.108, 0.086)
+\end{eqnarray*}
+
+## Practice
+
+\alert{Which of the following is the correct set of hypotheses for testing if the proportion of all Duke students who would be bothered a great deal by the melting of the northern ice cap differs from the proportion of all Americans who do?}
+
+A) $H_0: p_{Duke} = p_{US}$
+
+   $H_A: p_{Duke} \neq p_{US}$
+
+B) $H_0: \hat{p}_{Duke} = \hat{p}_{US}$
+
+   $H_A: \hat{p}_{Duke} \neq \hat{p}_{US}$
+
+C) $H_0: p_{Duke}-p_{US}=0$
+
+   $H_A:p_{Duke}-p_{US} \neq 0$
+
+D) $H_0: p_{Duke} = p_{US}$
+
+   $H_A: p_{Duke} < p_{US}$
+
+## Practice
+
+\alert{Which of the following is the correct set of hypotheses for testing if the proportion of all Duke students who would be bothered a great deal by the melting of the northern ice cap differs from the proportion of all Americans who do?}
+
+A) $\textcolor{red}{H_0: p_{Duke} = p_{US}}$
+
+   $\textcolor{red}{H_A: p_{Duke} \neq p_{US}}$
+
+B) $H_0: \hat{p}_{Duke} = \hat{p}_{US}$
+
+   $H_A: \hat{p}_{Duke} \neq \hat{p}_{US}$
+
+C) $H_0: p_{Duke}-p_{US}=0$
+
+   $H_A:p_{Duke}-p_{US} \neq 0$
+
+D) $H_0: p_{Duke} = p_{US}$
+
+   $H_A: p_{Duke} < p_{US}$
+   
+**Both A) and C) are correct.**
+
+## Flashback to working with one proportion
+
+- When constructing a confidence interval for a population proportion, we check if the **observed** number of successes and failures are at least 10.
+
+\centering{$n\hat{p} \geq 10$ \text{    } $n(1-\hat{p}) \geq 10$}
+
+- When conducting a hypothesis test for a population proportion, we check if the **expected** number of successes and failure are at least 10.
+
+\centering{$np_0 \geq 10$ \text{    } $n(1-p_0) \geq 10$}
+
+## Pooled estimate of a proportion
+
+- In the case of comparing two proportions where $h_0: p_1 = p_2$, there isn't a given null value we can use to calculate the **expected** number of successes and failures in each sample.
+
+- Therefore, we need to first find a common (**pooled**) proportion for the two groups, and use that in our analysis.
+
+- This simply means finding the proportion of total successes among the total number of observations.
+
+**Pooled estimate of a proportion**
+
+\centering{\[ \hat{p} = \frac{\#~of~successes_1 + \#~of~successes_2}{n_1 + n_2} \] }
+
+## Practice
+
+\alert{Calculate the estimated \underline{pooled proportion} of Duke students and Americans who would be bothered a great deal by the melting of the northern ice cap. Which sample proportion ($\hat{p}_{Duke}$ or $\hat{p}_{US}$) the pooled estimate is closer to? Why?}
+
+\begin{center}
+\begin{tabular}{l | c c}
+Data			& Duke		& US \\
+\hline
+A great deal	& 69			& 454 \\
+Not a great deal& 36			& 226 \\
+\hline
+Total			& 105		& 680 \\
+\hline
+$\hat{p}$		& 0.657		& 0.668
+\end{tabular}
+\end{center}
+
+
+\pause
+
+\begin{eqnarray*}
+\hat{p} &=& \frac{\#~of~successes_1 + \#~of~successes_2}{n_1 + n_2} \\
+\pause
+&=& \frac{69+454}{105+680} \pause = \frac{523}{785} \pause = 0.666
+\end{eqnarray*}
+
+
+## Practice
+
+\alert{Do these data suggest that the proportion of all Duke students who would be bothered a great deal by the melting of the northern ice cap differs from the proportion of all Americans who do? Calculate the test statistic, the p-value, and interpret your conclusion in context of the data.}
+
+\footnotesize
+\begin{center}
+\begin{tabular}{l | c c}
+Data			& Duke		& US \\
+\hline
+A great deal	& 69			& 454 \\
+Not a great deal& 36			& 226 \\
+\hline
+Total			& 105		& 680 \\
+\hline
+$\hat{p}$		& 0.657		& 0.668
+\end{tabular}
+\end{center}
+
+
+\pause
+
+\normalsize
+\begin{eqnarray*}
+Z &=& \frac{(\hat{p}_{Duke} - \hat{p}_{US})}{\sqrt{ \frac{ \hat{p} (1 - \hat{p})}{n_{Duke} } + \frac{ \hat{p} (1 -  \hat{p})}{n_{US} } }} \\
+\pause 
+&=& \frac{(0.657 - 0.668)}{\sqrt{ \frac{0.666 \times 0.334}{105} + \frac{0.666 \times 0.334}{680} }} = \pause \frac{-0.011}{0.0495} \pause = -0.22 \\
+\pause
+p-value &=& 2 \times P(Z < -0.22) \pause = 2 \times 0.41 = 0.82
+\end{eqnarray*}
+
+## Recap - comparing two proportions
+
+\begin{itemize}
+
+\item Population parameter: $(p_1 - p_2)$, point estimate: $(\hat{p}_1 - \hat{p}_2)$
+
+\pause
+
+\item Conditions:
+\pause
+\begin{itemize}
+\item independence within groups \\
+- random sample and 10\% condition met for both groups
+\item independence between groups
+\item at least 10 successes and failures in each group\\ 
+- if not $\rightarrow$ randomization (Section 6.4)
+\end{itemize}
+
+\pause
+
+\item $SE_{(\hat{p}_1 - \hat{p}_2)} = \sqrt{ \frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2} }$
+\begin{itemize}
+\item for CI: use $\hat{p}_1$ and $\hat{p}_2$
+\item for HT:
+\begin{itemize}
+\item when $H_0: p_1 = p_2$: use $\hat{p}_{pool} = \frac{\#~suc_1 + \#suc_2}{n_1 + n_2}$
+\item when $H_0: p_1 - p_2 = $ \textit{(some value other than 0)}: use $\hat{p}_1$ and $\hat{p}_2$ \\
+- this is pretty rare
+\end{itemize}
+\end{itemize}
+
+\end{itemize}
+  
+
+## Reference - Standard error calculations
+
+\begin{center}
+\begin{tabular}{l | l | l}
+			& one sample					& two samples \\ 
+\hline
+& & \\
+mean		& $SE = \frac{s}{\sqrt{n}}$			& $SE = \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$ \\
+& & \\
+\hline
+& & \\
+proportion		& $SE = \sqrt{ \frac{p(1-p)}{n} }$	& $SE = \sqrt{ \frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2} }$	 \\	
+& & \\
+\end{tabular}
+\end{center}
+
+\pause
+
+\begin{itemize}
+
+\item When working with means, it's very rare that $\sigma$ is known, so we usually use $s$.
+
+\pause
+
+\item When working with proportions, 
+\begin{itemize}
+\item if doing a hypothesis test, $p$ comes from the null hypothesis
+\item if constructing a confidence interval, use $\hat{p}$ instead
+\end{itemize}
+
+\end{itemize}
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

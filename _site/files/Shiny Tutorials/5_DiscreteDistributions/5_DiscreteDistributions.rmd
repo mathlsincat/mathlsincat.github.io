@@ -1,0 +1,704 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Topic 5: Discrete Probability Distributions   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Topic 5: Discrete Probability Distributions">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Shiny%20Tutorials/5_DiscreteDistributions/5_DiscreteDistributions.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Shiny%20Tutorials/5_DiscreteDistributions/5_DiscreteDistributions.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Topic 5: Discrete Probability Distributions">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Topic 5: Discrete Probability Distributions
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+#knitr::opts_chunk$set(eval = FALSE)
+library(dplyr)
+library(ggplot2)
+library(learnr)
+library(gradethis) #remotes::install_github("rstudio/gradethis")
+library(learnrhash) #devtools::install_github("rundel/learnrhash")
+
+tutorial_options(exercise.timelimit = 60, exercise.checker = gradethis::grade_learnr)
+
+#knitr::opts_chunk$set(eval = FALSE)
+```
+
+If you've never coded before (or even if you have), type `print("Your Name")` in the interactive R chunk below and run it by hitting `crtl+Enter` or `cmd+Enter` for MAC users.
+
+```{r Student-Name, exercise = TRUE}
+
+```
+
+## Discrete Probabilty Distributions
+
+Throughout this workbook you'll be introduced to the notion of probability and will explore applications of probability and discrete random variables. In particular we will focus on binomial experiments and using the binomial distribution to find probabilities of prescribed outcomes.
+
+**Note:** There are entire courses devoted to probability -- we will only cover probability to the extent that it is necessary for use in this course. If you are interested in a more detailed treatment of probability, seek out one of the many great courses available.
+
+###
+
+### Objectives
+
+**Workbook Objectives:** After completing this workbook you should be able to:
+
++ Define, discuss, and interpret the probability of an event as its likelihood.
++ Apply fundamental counting principles and the notion of independence to compute the probability associated with the occurrence of a sequence of events.
++ Use the definition of binomial experiments to identify scenarios to which the binomial distribution can be applied and then actually apply the distribution to find probabilities associated with specified outcomes. 
++ Given a binomial experiment, compute the expected number of successful outcomes as well as the standard deviation for number of successes.
+
+### Basic Probability
+
+**Definition of Probability (*frequentist*):** For a given random process, the probability of an event $A$ is the proportion of time we would observe outcome $A$ if the random process were repeated an infinite number of times.
+
+###
+
+**Example:** Given a fair coin, the probability of a flip turning up heads is $0.5$ (or 50%). Similarly, given a fair six-sided die, the probability of a roll resulting in a number greater than four is $1/3$ (or about 33.3%) because there are two outcomes satifying the criteria (rolling a 5 or rolling a 6) out of the six total possible outcomes.
+
+###
+
+**Try It!** Now it is your turn. Try the next few problems. Be sure to note any questions you have as you work through them.
+
+```{r basic-probability-quiz, echo = FALSE}
+quiz(
+  question_radio(
+    "Given one fair, six-sided die, what is the probabilty of rolling a three?",
+    answer("0/6"),
+    answer("1/6", correct = TRUE),
+    answer("2/6"),
+    answer("3/6"),
+    answer("4/6"),
+    answer("5/6"),
+    answer("6/6"),
+    allow_retry = TRUE
+  ),
+  question_radio(
+    "Given one fair, six-sided die, what is the probability of rolling a two, four, or six?",
+    answer("0/6"),
+    answer("1/6"),
+    answer("2/6"),
+    answer("3/6", correct = TRUE),
+    answer("4/6"),
+    answer("5/6"),
+    answer("6/6"),
+    allow_retry = TRUE
+  ),
+  question_radio(
+    "Given two fair, six-sided die, which is larger?",
+    answer("The probability of rolling a total of two"),
+    answer("The probability of rolling a total of five", correct = TRUE),
+    allow_retry = TRUE
+  )
+)
+```
+
+###
+
+Good work on that last set of questions. In those problems you could find the probability by counting the number of ways the desired outcome could occur and then dividing that number by the total number of outcomes possible. In the last question, there were simply more ways to roll a five (four ways to do it) than to roll a two (just one way). What if we try doing something a bit more complicated? Say we wanted to know the probability of rolling at least a two on a single roll of a die and then flipping a "tails" on a single flip of a coin?
+
+###
+
+**Probability and Independent Events:** If $A$ and $B$ are independent events (that is, the probability that $B$ occurs does not depend on whether or not $A$ occured and vice-versa), then the probability of $A$ and $B$ occurring is the product of the probability of $A$ occurring and the probability of $B$ occurring. Mathematically, we write: $\mathbb{P}\left[A~\text{and}~B\right] = \mathbb{P}\left[A\right]\cdot\mathbb{P}\left[B\right]$.
+
+###
+
+```{r build-probA-and-B, echo = FALSE}
+quiz(
+  question_radio(
+    "Given a single roll of a fair, six-sided die, what is the probability of rolling at least a two?",
+    answer("0/6"),
+    answer("1/6"),
+    answer("2/6"),
+    answer("3/6"),
+    answer("4/6"),
+    answer("5/6", correct = TRUE),
+    answer("6/6"),
+    allow_retry = TRUE
+  ),
+  question_radio(
+    "Given a single flip of a fair coin, what is the probability of the coin landing with *tails* facing upwards?",
+    answer("0/2"),
+    answer("1/2", correct = TRUE),
+    answer("2/2"),
+    allow_retry = TRUE
+  )
+)
+```
+
+Use the code block below to compute the probability that in a single roll of a fair die and a flip of a coin we observe a roll of at least two and a flip of tails.
+```{r pAandB, exercise = TRUE}
+
+```
+
+```{r pAandB-check}
+grade_result(
+  pass_if(~ identical(.result, (5/6)*(1/2)))
+)
+```
+
+###
+
+Good work so far. Let's say you forgot to study for your chemistry quiz today. It is a four question multiple choice quiz with options $a)$ - $e)$. You decide that your best option is to guess randomly on each of the questions. Answer the following, using the empty code block below to carry out any necessary computations.
+
+```{r calc-box, exercise = TRUE}
+
+```
+
+```{r chem-quiz-probability, echo = FALSE}
+quiz(
+  question_radio(
+    "For a single question, what is the probability that you get that question correct?",
+    answer("0"),
+    answer("0.10"),
+    answer("0.20", correct = TRUE),
+    answer("0.25"),
+    answer("0.5"),
+    answer("0.8"),
+    allow_retry = TRUE
+  ),
+  question_radio(
+    "What is the probability that you get every one of the questions correct?",
+    answer("0"),
+    answer("0.0016", correct = TRUE),
+    answer("0.01"),
+    answer("0.2"),
+    answer("0.4096"),
+    answer("0.5555"),
+    answer("0.998"),
+    answer("1"),
+    allow_retry = TRUE
+  ),
+  question_radio(
+    "What is the probability that you get every one of the questions wrong?",
+    answer("0"),
+    answer("0.002"),
+    answer("0.01"),
+    answer("0.2"),
+    answer("0.4096", correct = TRUE),
+    answer("0.5555"),
+    answer("0.998"),
+    answer("1"),
+    allow_retry = TRUE
+  ),
+  question_radio(
+    "What is the probability that the first one you get wrong is question three?",
+    answer("0"),
+    answer("0.015"),
+    answer("0.032", correct = TRUE),
+    answer("0.0064"),
+    answer("0.2"),
+    answer("1.2"),
+    allow_retry = TRUE
+  ),
+  question_radio(
+    "What is the probability that you get exactly two questions right?",
+    answer("0.04"),
+    answer("0.08"),
+    answer("0.256", message = "You assumed something here -- what was it?"),
+    answer("0.2"),
+    answer("0.4"),
+    answer("0.64", message = "Hmmm, what about the other two questions?"),
+    answer("None of these", correct = TRUE),
+    allow_retry = TRUE
+  )
+)
+```
+
+###
+
+So in the last question, none of the choices were correct -- but why? There are lots of ways that we could get two of the questions right. We could get the first two right, the first and last right, the middle two right, and more! We need to account for all of these possibilities.
+
+### Binomial Experiments and the Binomial Distribution
+
+**Binomial Experiments:** A binomial experiment satisfies each of the following three criteria:
+
++ There are $n$ repeated trials.
++ Each trial has two possible outcomes (usually called *success* and *failure* for convenience)
++ The trials are independent of one another. That is, for each trial, the probability of success is $p$ (which remains constant).
+
+###
+
+**Binomial Distribution:** Let $X$ be the number of successes resulting from a binomial experiment with $n$ trials. We can compute the following probabilities:
+
++ The probability of <u>exactly</u> $k$ successes is given by
+<center> $\displaystyle{\mathbb{P}\left[X = k\right] = \binom{n}{k}\cdot p^k\left(1 - p\right)^{n-k} \approx \tt{dbinom(k, n, p)}}$</center>
++ The probability of <u>at most</u> $k$ successes is given by
+<center> $\displaystyle{\mathbb{P}\left[X \leq k\right] = \sum_{i=0}^{k}{\binom{n}{i}\cdot p^i\left(1 - p\right)^{n-i}} \approx \tt{pbinom(k, n, p)}}$</center>
+
+In the equations above, $\binom{n}{k} = \frac{n!}{k!\left(n-k\right)!}$ counts the number of ways to arrange the $k$ successes amongst the $n$ trials. That being said, the `R` functionality, `dbinom()` and `pbinom()` allow us to bypass the messy formulas -- but you'll still need to know what these functions do in order to use them correctly!
+
+**Tip:** We need to use the binomial distribution to find probabilities associated with numbers of successesful (or failing) outcomes in which *we do not know for certain the trials on which the successes (or failures) occur*.
+
+###
+
+The code block below is set up to find the probability of exactly two flips of a coin landing heads-up out of seven total flips. Edit the code block that that it finds the probability that you got exactly two of the four questions on your chemistry quiz from earlier correct. As a reminder, there were five answer options for each question and you were guessing randomly.
+
+```{r chem-quiz-binom, exercise = TRUE, exercise.eval = TRUE}
+dbinom(2, 7, 0.5)
+```
+
+```{r chem-quiz-binom-check}
+grade_result(
+  pass_if(~ (abs(.result - dbinom(2, 4, 0.2)) < 0.001))
+)
+```
+
+###
+
+Good work. Now you'll get to try a few more problems! As you work through the next set of questions, you may want to check out [this example and solution](www/BinomialExample.pdf){target="_blank"}. Note that in that document, I mention that drawing a simple picture for each problem will help you decide which function(s) you might use and whether you might need to make multiple computations. This is a really important strategy that will help you in developing a strategy to solve each problem.
+
+**Practice:** For each of the following, consider a scenario in which a random sample of 18 students is asked (in private) whether they've failed to hand in at least one assignment this semester. We assume that about 34% of students fail to hand in at least one assignment.
+
+1. Given a single, randomly chosen student, what is the probability that the student will have failed to hand in at least one assignment this semester?
+```{r binom-assignments-ex1, exercise = TRUE}
+
+```
+
+```{r binom-assignments-ex1-check}
+grade_result(
+  pass_if(~ identical(.result, 0.34))
+)
+```
+
+2. Find the probability that exactly 7 of the 18 students have failed to hand in at least one assignment.
+```{r binom-assignments-ex2, exercise = TRUE}
+
+```
+
+```{r binom-assignments-ex2-check}
+grade_result(
+  pass_if(~ (abs(.result - dbinom(7, 18, 0.34)) < 0.001))
+)
+```
+
+3. Find the probability that at most 9 of the 18 students have failed to hand in at least one assignment.
+```{r binom-assignments-ex3, exercise = TRUE}
+
+```
+
+```{r binom-assignments-ex3-check}
+grade_result(
+  pass_if(~ (abs(.result - pbinom(9, 18, 0.34)) < 0.001))
+)
+```
+
+4. Find the probability that at least 11 of the 18 students have failed to hand in at least one assignment.
+```{r binom-assignments-ex4, exercise = TRUE}
+
+```
+
+```{r binom-assignments-ex4-check}
+grade_result(
+  pass_if(~ (abs(.result - (1 - pbinom(10, 18, 0.34))) < 0.001))
+)
+```
+
+5. Find the probability that between a minimum of 6 and a maximim of 12 out of the 18 students have failed to hand in at least one assignment.
+```{r binom-assignments-ex5, exercise = TRUE}
+
+```
+
+```{r binom-assignments-ex5-check}
+grade_result(
+  pass_if(~ (abs(.result - (pbinom(12, 18, 0.34) - pbinom(5, 18, 0.34))) < 0.001))
+)
+```
+
+6. The expected number of successes in a binomial experiment is sometimes denoted by $\mathbb{E}\left[X\right]$ and can be computed as $\mathbb{E}\left[X\right] = n\cdot p$, where $n$ denotes the number of trials run and $p$ denotes the probability of success on a single trial. Sometimes it is convenient to think of the expected number of successes as "the mean". Use the code block below to compute the expected number of students who have failed to hand in at least one assignent:
+```{r binom-assignments-ex6, exercise = TRUE}
+
+```
+
+```{r binom-assignments-ex6-check}
+grade_result(
+  pass_if(~ (abs(.result - (18*0.34)) < 0.01))
+)
+```
+
+7. The standard deviation in the number of successes for a binomial experiment can also be computed. The quantity $\displaystyle{s_X = \sqrt{n\cdot p\left(1 - p\right)}}$, where $n$ denotes the number of trials run and $p$ denotes the probability of success on a single trial is the standard deviation in number of successes. Use the code block below to compute the standard deviation in number of students who have failed to hand in at least one assignent from random samples of 18 students:
+```{r binom-assignments-ex7, exercise = TRUE}
+
+```
+
+```{r binom-assignments-ex7-check}
+grade_result(
+  pass_if(~ (abs(.result - (sqrt(18*0.34*(1 - 0.34)))) < 0.01))
+)
+```
+
+Be sure to write down what questions you had as you worked through these problems and to have a teacher, colleague, or tutor help clarify things for you.
+
+### Submit
+
+```{r context="server"}
+learnrhash::encoder_logic(strip_output = TRUE)
+```
+
+```{r encode, echo=FALSE}
+learnrhash::encoder_ui(
+  ui_before = shiny::div(
+    "If you have completed this tutorial and are happy with all of your",
+    "solutions, please click the button below to generate your hash and",
+    "submit it using the corresponding tutorial assignment tab on Blackboard",
+    shiny::tags$br()
+  ), 
+  ui_after = shiny::tags$a(href = "https://blackboard.ncat.edu/", "NCAT Blackboard")
+)
+```
+
+### Summary
+
+Up to this point you've been exposed to basic probability, binomial experiments, and using the binomial distribution. Here's a quick recap.
+
++ The probability of an event $A$ is a measure of the likelihood of $A$ occurring, and is denoted by $\mathbb{P}\left[A\right]$.
++ The probability of any event must be between $0$ and $1$
++ A binomial experiment satisfies each of the following
+  + The experiment consists of $n$ repeated trials
+  + Each trial has two possible outcomes
+  + The trials are independent of one another
++ If $X$ denotes the number of successes resulting from a binomial experiment with $n$ trials and probability of success on a single trial equal to $p$, then
+  + $\mathbb{P}\left[X = k\right] \approx \tt{dbinom(k, n, p)}$
+  + $\mathbb{P}\left[X\leq k\right] \approx \tt{pbinom(k, n, p)}$
+  + Drawing a picture is a crucial step along the way to solving a probability problem. The two functions above are enough to compute the probability of any type of outcome associated with a binomial experiment -- the trick is in finding how to put these tools to use -- drawing a picture will guide you.
+  + The expected value of $X$ (expected number of successes) is given by $\mathbb{E}\left[X\right] = n\cdot p$
+  + The standard deviation of $X$ (standard deviation of number of successes) is given by $s_X = \sqrt{n\cdot p\left(1 - p\right)}$
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

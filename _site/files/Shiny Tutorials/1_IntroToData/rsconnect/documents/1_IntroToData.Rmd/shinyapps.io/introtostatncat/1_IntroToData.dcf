@@ -1,0 +1,13 @@
+name: 1_IntroToData
+title: 1_IntroToData
+username:
+account: introtostatncat
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4726048
+bundleId: 5068562
+url: https://introtostatncat.shinyapps.io/1_IntroToData/
+when: 1632495961.35684
+lastSyncTime: 1632495961.35684
+asMultiple: FALSE
+asStatic: FALSE

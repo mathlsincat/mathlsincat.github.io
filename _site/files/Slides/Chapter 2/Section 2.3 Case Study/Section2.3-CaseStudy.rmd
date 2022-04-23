@@ -1,0 +1,603 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Chapter 2   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Chapter 2">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Slides/Chapter%202/Section%202.3%20Case%20Study/Section2.3-CaseStudy.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Slides/Chapter%202/Section%202.3%20Case%20Study/Section2.3-CaseStudy.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Chapter 2">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Chapter 2
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=F, message=F, warning=F}
+library(readr)
+library(openintro)
+library(datasets)
+library(tidyverse)
+library(scales)
+data(COL)
+```
+
+# Case Study: Gender discrimination
+
+## Gender discrimination
+
+- In 1972, as a part of a study on gender discrimination, 48 male bank supervisors were each given the same personnel file and asked to judge whether the person should be promoted to a branch manager job that was described as "routine".
+
+- The files were identical except that half of the supervisors had files showing the person was male while the other half had files showing the person was female.
+
+- It was randomly determined which supervisors got "male" applications and which got "female" applications.
+
+- Of the 48 files reviewed, 35 were promoted.
+
+- The study is testing whether females are unfairly discriminated against.
+
+\alert{Is this an observational study or an experiment?}
+
+
+## Data
+
+\alert{At a first glance, does there appear to be a relationship between promotion and gender?}
+
+\begin{table}[]
+\begin{tabular}{ccccc}
+                        &        & \multicolumn{2}{c}{Promotion} &       \\ \cline{3-4}
+                        &        & Promoted    & Not Promoted    & Total \\ \cline{2-5} 
+\multirow{2}{*}{Gender} & Male   & 21          & 3               & 24    \\
+                        & Female & 14          & 10              & 24    \\ \cline{2-5} 
+                        & Total  & 35          & 13              & 48    \\ \cline{2-5} 
+\end{tabular}
+\end{table}
+
+\pause
+
+**% of males promoted:** 21/24 = 0.875
+
+**% of females promoted:** 14/24 = 0.583
+
+## Practice
+
+\alert{We saw a difference of almost 30\% (28.2\% to be exact) between the proportion of male and female files that are promoted. Based on this information, which of the below is true?}
+
+A) If we were to repeat the experiment we will definitely see that more female files get promoted. This was a fluke.
+B) Promotion is dependent on gender, males are more likely to be promoted, and hence there is gender discrimination against women in promotion decisions.
+C) The difference in the proportions of promoted male and female files is due to chance, this is not evidence of gender discrimination against women in promotion decisions.
+D) Women are less qualified than men, and this is why fewer females get promoted.
+
+## Practice
+
+\alert{We saw a difference of almost 30\% (28.2\% to be exact) between the proportion of male and female files that are promoted. Based on this information, which of the below is true?}
+
+A) If we were to repeat the experiment we will definitely see that more female files get promoted. This was a fluke.
+B) \alert{Promotion is dependent on gender, males are more likely to be promoted, and hence there is gender discrimination against women in promotion decisions.} **Maybe**
+C) \alert{The difference in the proportions of promoted male and female files is due to chance, this is not evidence of gender discrimination against women in promotion decisions.} **Maybe**
+D) Women are less qualified than men, and this is why fewer females get promoted. 
+
+## Two competing claims
+
+\begin{enumerate}
+
+\item "There is nothing going on."\\ Promotion and gender are \textbf{independent}, no gender discrimination, observed difference in proportions is simply due to chance. \rightarrow \textbf{ Null hypothesis}
+
+\pause
+
+\item "There is something going on."\\ Promotion and gender are dependent, there is gender discrimination, observed difference in proportions is not due to chance. \rightarrow \textbf{ Alternative hypothesis}
+
+\end{enumerate}
+
+## A trial as a hypothesis test
+
+\begin{multicols}{2}
+
+\begin{itemize}
+
+\item Hypothesis testing is very much like a court trial.
+
+\item $H_0$: Defendant is innocent\\ $H_A$: Defendant is guilty
+
+\item We then present the evidence \- collect data.
+
+\end{itemize}
+
+\columnbreak
+
+\includegraphics[width=1\columnwidth]{trial.png}
+
+\end{multicols}
+
+  \begin{itemize}
+  
+  \item Then we judge the evidence - "Could these data plausibly have happened by chance if the null hypothesis were true?"
+  
+    \begin{itemize}
+    \item If they were very unlikely to have occurred, then the evidence raises more than a reasonable               doubt in out minds about the null hypothesis.
+    \end{itemize}
+    
+  \item Ultimately we must make a decision. How unlikely is unlikely?
+  
+  \end{itemize}
+
+## A trial as a hypothesis test
+
+- If the evidence is not strong enough to reject then assumption of innocence, the jury returns with a verdict of "not guilty".
+
+  - The jury does not say that the defendant is innocent, just that there is not enough evidence to convict.
+  
+  - The defendant may, in fact, be innocent, but the jury has no way of being sure.
+  
+- Said statistically, we fail to reject the null hypothesis.
+
+  - We never declare the null hypothesis to be true, because we simply do not know whether it's true or not.
+  
+  - Therefore we never "accept the null hypothesis".
+  
+## A trial as a hypothesis test
+
+- In a trial, the burden of proof is on the prosecution.
+
+- In a hypothesis test, the burden of proof is on the unusual claim. 
+
+- The null hypothesis is the ordinary state of affairs (the status quo), so it's the alternative hypothesis that we consider unusual and for which we must gather evidence.
+
+## Recap: Hypothesis testing framework
+
+- We start with a **null hypothesis ($H_0$)** that represents the status quo.
+
+- We also have an **alternative hypothesis ($H_A$)** that represents our research question, i.e. what we're testing for.
+
+- We conduct a hypothesis test under the assumption that the null hypothesis is true, either via simulation (today) or theoretical methods (later in the courses).
+
+- if the test results suggest that the data do not provide convincing evidence for the alternative hypothesis, we stick with the null hypothesis, If they do, then we reject the null hypothesis in favor of the alternative.
+
+## Simulating the experiment...
+
+... under the assumption of independence, i.e. leave things up to chance.
+
+If results from the simulations based on the **chance model** look like the data, then we can determine that the difference between the proportions of promoted files between males and females was simply **due to chance** (promotion and gender are independent).
+
+If the results from the simulations based on the chance model do not look like the data, then we can determine that the difference between the proportions of promoted filed between males and females was not due to chance, but **due to an actual effect of gender** (promotion and gender are dependent).
+
+## Application activity: simulating the experiment
+
+Use a deck of playing cards to simulate the experiment.
+
+\begin{enumerate}
+
+\item Let a face card represent \textit{not} promoted and a non\-face card represent a \textit{promoted}. Consider aces as face cards.
+
+  \begin{itemize}
+  
+  \item Set aside the jokers.
+  
+  \item Take out 3 aces \rightarrow there are exactly 13 face cards left in the deck (face cards: A, K, Q, J).
+  
+  \item Take out a number card \rightarrow there are exactly 35 number (non\-face) cards left in the deck (number cards: 2\-10).
+  
+  \end{itemize}
+  
+\item Shuffle the cards and deal them into two groups of size 24, representing males and females.
+
+\item Count and record how many files in each group are promoted (number cards).
+
+\item Calculate the proportion of promoted files in each group and take the difference (male - female), and record this value.
+
+\item Repeat steps 2 - 4 many times.
+
+\end{enumerate}
+
+## Step 1
+
+![](images/step1.png)
+
+## Step 2 \- 4
+
+![](images/step2.png)
+
+## Practice
+
+\alert{Do the results of the simulation you just ran provide convincing evidence of gender discrimination against women, i.e. dependence between gender and promotion decisions?}
+
+A) No, the data do not provide convincing evidence for the alternative hypothesis, therefore we can't reject the null hypothesis of independence between gender and promotion decisions. The observed difference between the two proportions was due to chance.
+
+B) Yes, the data provide convincing evidence for the alternative hypothesis of gender discrimination against women in promotion decisions. The observed difference between the two proportions was due to a real effect of gender.
+
+## Practice
+
+\alert{Do the results of the simulation you just ran provide convincing evidence of gender discrimination against women, i.e. dependence between gender and promotion decisions?}
+
+A) No, the data do not provide convincing evidence for the alternative hypothesis, therefore we can't reject the null hypothesis of independence between gender and promotion decisions. The observed difference between the two proportions was due to chance.
+
+B) \alert{Yes, the data provide convincing evidence for the alternative hypothesis of gender discrimination against women in promotion decisions. The observed difference between the two proportions was due to a real effect of gender.}
+
+## Simulation using software
+
+These simulations are tedious and slow to run using the method described earlier. In reality, we use software to generate the simulations. The dot plot below shows the distribution of simulated differences in promotion rates based on 100 simulations.
+
+```{r, echo=F, message=F, fig.width=8, fig.height=4.5,warning=F,fig.align='center'}
+set.seed(8535)
+
+gender <- c(rep('male', 24), rep('female', 24))
+outcome <- c(rep(c('promoted', 'not promoted'), c(21, 3)), rep(c('promoted', 'not promoted'), c(14, 10)))
+
+nsim  = 100
+n     = length(gender)
+group = gender
+var1  = outcome
+success = "promoted"
+sim   = matrix(NA, nrow = n, ncol = nsim)
+n1    = n2 = 24
+
+statistic <- function(var1, group){	
+	t1 <- var1 == success & group == levels(as.factor(group))[1]
+	t2 <- var1 == success & group == levels(as.factor(group))[2]
+	sum(t1)/n1 - sum(t2)/n2 
+}
+
+for(i in 1:nsim){
+	sim[,i] = sample(group, n, replace = FALSE)
+}
+
+sim_dist = apply(sim, 2, statistic, var1 = outcome)
+diffs    = sim_dist
+pval     = sum(diffs >= 0.29) / nsim
+values  <- table(sim_dist)
+
+
+X <- c()
+Y <- c()
+for(i in 1:length(diffs)){
+	x   <- diffs[i]
+	rec <- sum(sim_dist == x)
+	X   <- append(X, rep(x, rec))
+	Y   <- append(Y, 1:rec)
+}
+
+plot(X, Y, xlim=range(diffs)+c(-1,1)*sd(diffs)/4, xlab = "Difference in promotion rates", ylab="",axes = FALSE, ylim=c(0,max(Y)), col=COL[1], cex = 1.5, cex.lab = 1.5, pch=20)
+axis(1, at = seq(-0.4,0.4,0.1), labels = c(-0.4,"",-0.2,"",0,"",0.2,"",0.4))
+abline(h=0)
+```
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

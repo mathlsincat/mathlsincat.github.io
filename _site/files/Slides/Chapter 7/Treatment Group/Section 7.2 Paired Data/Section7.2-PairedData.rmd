@@ -1,0 +1,902 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Chapter 7   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Chapter 7">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Slides/Chapter%207/Treatment%20Group/Section%207.2%20Paired%20Data/Section7.2-PairedData.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Slides/Chapter%207/Treatment%20Group/Section%207.2%20Paired%20Data/Section7.2-PairedData.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Chapter 7">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Chapter 7
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=F, message=F, warning=F}
+library(readr)
+library(openintro)
+library(here)
+library(tidyverse)
+library(xtable)
+data(COL)
+```
+
+
+# Paired data
+
+## 
+
+\alert{200 observations were randomly sampled from the High School and Beyond survey. The same students took a reading and writing test and their scores are shown below. At a first glance, does there appear to be a difference between the average reading and writing test score?}
+
+```{r, echo=F, message=F, warning=F, out.width="90%",fig.align='center'}
+data(hsb2)
+data(COL)
+par(mar=c(3, 4, 0.5, 0.5), las=1, mgp=c(2.8, 0.7, 0), cex.axis = 1.1, cex.lab = 1.1)
+scores <- c(hsb2$read, hsb2$write)
+gp <- c(rep('read', nrow(hsb2)), rep('write', nrow(hsb2)))
+openintro::dotPlot(scores, gp, vertical=TRUE, xlab="",ylab = "scores", at=1:2+0.13, col=fadeColor(COL[1],33), xlim=c(0.5,2.5), ylim=c(20, 80), axes = FALSE, cex.lab = 1.8, cex.axis = 1.8)
+axis(1, at = c(1,2), labels = c("read","write"), cex.lab = 1.8, cex.axis = 1.8)
+axis(2, at = seq(20,80,20), cex.axis = 1.25)
+boxplot(scores ~ gp, add=TRUE, axes=FALSE)
+abline(h=0)
+```
+
+## Practice
+
+\alert{The same students took a reading and writing test and their scores are shown below. Are the reading and writing scores of each student independent of each other?}
+
+\begin{center}
+\begin{tabular}{rrrr}
+  \hline
+ & id & read & write \\ 
+  \hline
+1 & 70 & 57 & 52 \\ 
+  2 & 86 & 44 & 33 \\ 
+  3 & 141 & 63 & 44 \\ 
+  4 & 172 & 47 & 52 \\ 
+  $\vdots$ &   $\vdots$  &   $\vdots$ &   $\vdots$  \\
+  200 & 137 & 63 & 65 \\ 
+   \hline
+\end{tabular}
+\end{center}
+
+A) Yes $\hspace{3.5cm}$ B) No
+
+## Practice
+
+\alert{The same students took a reading and writing test and their scores are shown below. Are the reading and writing scores of each student independent of each other?}
+
+\begin{center}
+\begin{tabular}{rrrr}
+  \hline
+ & id & read & write \\ 
+  \hline
+1 & 70 & 57 & 52 \\ 
+  2 & 86 & 44 & 33 \\ 
+  3 & 141 & 63 & 44 \\ 
+  4 & 172 & 47 & 52 \\ 
+  $\vdots$ &   $\vdots$  &   $\vdots$ &   $\vdots$  \\
+  200 & 137 & 63 & 65 \\ 
+   \hline
+\end{tabular}
+\end{center}
+
+A) Yes $\hspace{3.5cm}$ B) \alert{No}
+
+## Analyzed paired data
+
+- When two sets of observations have this special correspondence (not independent), they are said to be **paired**.
+
+\pause
+
+- To analyze paired data, it is often useful to look at the difference in outcomes of each pair of observations.
+
+\centering{diff = read $-$ write}
+
+\pause
+
+- It is important that we always subtract using a consistent order.
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\small
+\begin{center}
+\begin{tabular}{rrrrr}
+  \hline
+ & id & read & write & diff \\ 
+  \hline
+  1 & 70 & 57 & 52 & 5 \\ 
+  2 & 86 & 44 & 33 & 11 \\ 
+  3 & 141 & 63 & 44 & 19 \\ 
+  4 & 172 & 47 & 52 & -5 \\ 
+  $\vdots$ &   $\vdots$  &   $\vdots$ &   $\vdots$ &   $\vdots$ \\
+  200 & 137 & 63 & 65 & -2 \\ 
+   \hline
+\end{tabular}
+\end{center}
+\normalsize
+\end{column}
+
+\begin{column}{0.5\textwidth}
+```{r, echo=F, message=F, warning=F, out.width="100%",fig.align='center'}
+data(hsb2)
+data(COL)
+histPlot(hsb2$read - hsb2$write, col = COL[1], xlab = "Differences in scores (read - write)", ylab = "", cex.lab = 2, cex.axis = 3)
+```
+\end{column}
+
+\end{columns}
+
+
+## Parameter and point estimate
+
+- **Parameter of interest:** Average difference between the reading and writing scores of **all** high school students.
+
+\centering{$\mu_{diff}$}
+
+\pause
+
+- **Point estimate:** Average difference between the reading and writing scores of **sampled** high school students.
+
+\centering{$\bar{x}_{diff}$}
+
+## Setting the hypotheses
+
+\alert{If in fact there was no difference between the scores on the reading and writing exams, what would you expect the average difference to be?}
+
+\pause
+
+0
+
+\pause
+
+\alert{What are the hypotheses for testing if there is a difference between the average reading and writing scores?}
+
+\pause
+
+\begin{itemize}
+
+\item[$H_0:$] There is no difference between the average reading and writing score. \\
+\centering{$\mu_{diff}=0$}
+
+\item[$H_A:$] There is a difference between the average reading and writing score. \\
+\centering{$\mu_{diff} \ne 0$}
+
+\end{itemize}
+
+
+## Nothing new here
+
+- The analysis is no different than what we have done before.
+
+- We have data from **one** sample: differences.
+
+- We are testing to see if average difference is different than 0.
+
+## Checking assumptions & conditions
+
+\alert{Which of the following is true?}
+
+A) Since students are sampled randomly and are less than 10% of all high school students, we can assume that the difference between the reading and writing scores of one student in the sample is independent of another.
+
+B) The distribution of differences is bimodal, therefore we cannot continue with the hypothesis test.
+
+C) In order for differences to be random we should have sampled with replacement.
+
+D) Since students are sampled randomly and are less than 10% all students, we can assume that the sampling distribution of the average difference will be nearly normal.
+
+## Checking assumptions & conditions
+
+\alert{Which of the following is true?}
+
+A) \alert{Since students are sampled randomly and are less than 10\% of all high school students, we can assume that the difference between the reading and writing scores of one student in the sample is independent of another.}
+
+B) The distribution of differences is bimodal, therefore we cannot continue with the hypothesis test.
+
+C) In order for differences to be random we should have sampled with replacement.
+
+D) Since students are sampled randomly and are less than 10% all students, we can assume that the sampling distribution of the average difference will be nearly normal.
+
+## Calculating the test-statistic and the p-value
+
+\alert{The observed average difference between the two scores is -0.545 points and the standard deviation of the difference is 8.887 points. Do these data provide convincing evidence of a difference between the average scores on the two exams? Use $\alpha = 0.05$.}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+```{r, echo=F, message=F, warning=F, out.width="100%",fig.align='center'}
+data(hsb2)
+data(COL)
+par(mar=c(2,0,0,0), las=1, mgp=c(3,1,0), mfrow = c(1,1))
+
+m = 0
+s = 8.887/sqrt(200)
+l = -0.545
+u = 0.545
+
+normTail(m = m, s = s, L = l, U = u, axes = FALSE, col = COL[1])
+axis(1, at = c(m - 3*s,l,m,u,m + 3*s), label = c(NA,l,m,u,NA), cex.axis = 2)
+```
+\end{column}
+
+\pause
+
+\begin{column}{0.5\textwidth}
+\begin{eqnarray*}
+T &=& \frac{-0.545 - 0}{\frac{8.887}{\sqrt{200}}} \\
+&=& \frac{-0.545}{0.628} = -0.87 \\
+df &=& 200 - 1 = 199 \\
+\pause
+p-value &=& 0.1927 \times 2 = 0.3854
+\end{eqnarray*}
+\end{column}
+
+\end{columns}
+
+\pause
+
+Since p-value > 0.05, fail to reject, the data do \underline{not} provide convincing evidence of a difference between the average reading and writing scores.
+
+
+## Interpretation of p-value
+
+\alert{Which of the following is the correct interpretation of the p-value?}
+
+A) Probability that the average scores on the reading and writing exams are equal.
+
+B) Probability that the average scores on the reading and writing exams are different.
+
+C) Probability of obtaining a random sample of 200 students where the average difference between the reading and writing scores is at least 0.545 (in either direction), if it fact the true average difference between the scores is 0.
+
+D) Probability of incorrectly rejecting the null hypothesis if in fact the null hypothesis is true.
+
+## Interpretation of p-value
+
+\alert{Which of the following is the correct interpretation of the p-value?}
+
+A) Probability that the average scores on the reading and writing exams are equal.
+
+B) Probability that the average scores on the reading and writing exams are different.
+
+C) \alert{Probability of obtaining a random sample of 200 students where the average difference between the reading and writing scores is at least 0.545 (in either direction), if it fact the true average difference between the scores is 0.}
+
+D) Probability of incorrectly rejecting the null hypothesis if in fact the null hypothesis is true.
+
+## HT $\leftrightarrow$ CI
+
+\alert{Suppose we were to construct 95\% confidence interval for the average difference between the reading and writing scores. Would you expect this interval to include 0?}
+
+A) Yes
+
+B) No
+
+C) Cannot tell from the information given.
+
+## HT $\leftrightarrow$ CI
+
+\alert{Suppose we were to construct 95\% confidence interval for the average difference between the reading and writing scores. Would you expect this interval to include 0?}
+
+A) \alert{Yes}
+
+B) No
+
+C) Cannot tell from the information given.
+
+\begin{eqnarray*} 
+-0.545 \pm 1.97 \frac{8.887}{\sqrt{200}} &=& -0.545 \pm 1.97 \times 0.628 \\
+&=& -0.545 \pm 1.24 \\
+&=& (-1.785, 0.695)
+\end{eqnarray*}
+
+## Friday the $13^{th}$
+
+Between 1990 - 1992 researchers in the UK collected data on traffic flow, accidents, hospital admissions on Friday $13^{th}$ and the previous Friday, Friday $6^{th}$. Below is an excerpt from this data set on traffic flow. We can assume that traffic flow on given day at locations 1 and 2 are independent.
+
+\small
+\begin{center}
+\begin{tabular}{rllrrrl}
+  \hline
+ & type & date & 6$^{\text{th}}$ & 13$^{\text{th}}$ & diff & location  \\ 
+  \hline
+1 & traffic & 1990,  July & 139246 & 138548 & 698 & loc 1 \\
+  2 & traffic & 1990,  July & 134012 & 132908 & 1104 & loc 2 \\
+  3 & traffic & 1991,  September & 137055 & 136018 & 1037 & loc 1 \\
+  4 & traffic & 1991,  September & 133732 & 131843 & 1889 & loc 2 \\
+  5 & traffic & 1991,  December & 123552 & 121641 & 1911 & loc 1 \\
+  6 & traffic & 1991,  December & 121139 & 118723 & 2416 & loc 2 \\
+  7 & traffic & 1992,  March & 128293 & 125532 & 2761 & loc 1 \\
+  8 & traffic & 1992,  March & 124631 & 120249 & 4382 & loc 2 \\
+  9 & traffic & 1992,  November & 124609 & 122770 & 1839 & loc 1 \\
+  10 & traffic & 1992,  November & 117584 & 117263 & 321 & loc 2 \\
+   \hline
+\end{tabular}
+\end{center}
+
+
+## Friday the $13^{th}$
+
+- We want to investigate if people's behavior is different on Friday $13^{th}$ compared to Friday $6^{th}$.
+
+\pause
+
+- One approach is to compare the traffic flow on these two days.
+
+\pause
+
+\begin{itemize}
+
+\item We want to investigate if people's behavior is different on Friday 13$^{\text{th}}$ compared to Friday 6$^{\text{th}}$.
+
+\pause
+
+\item $H_0:$ Average traffic flow on Friday 6$^{\text{th}}$ and 13$^{\text{th}}$ are equal. \\
+$H_A:$ Average traffic flow on Friday 6$^{\text{th}}$ and 13$^{\text{th}}$ are different.
+
+\pause
+
+\end{itemize}
+
+\alert{Each case in the data set represents traffic flow recorded at the same location in the same month of the same year: one count from Friday $6^{th}$ and the other Friday $13^{th}$. Are these two counts independent?}
+
+\pause
+
+No.
+
+## Hypotheses
+
+\alert{What are the hypotheses for testing for a difference between the average traffic flow between Friday $6^{th} \text{ and } 13^{th}$?}
+
+\begin{enumerate}[A)]
+\item  $H_0: \mu_{6th} = \mu_{13th}$ \\ $H_A: \mu_{6th} \ne \mu_{13th}$
+\item  $H_0: p_{6th} = p_{13th}$ \\ $H_A: p_{6th} \ne p_{13th}$
+\item  $H_0: \mu_{diff} = 0$ \\ $H_A: \mu_{diff} \ne 0$ 
+\item  $H_0: \bar{x}_{diff} = 0$ \\ $H_A: \bar{x}_{diff} = 0$
+\end{enumerate}
+
+
+## Hypotheses
+
+\alert{What are the hypotheses for testing for a difference between the average traffic flow between Friday $6^{th} \text{ and } 13^{th}$?}
+
+\begin{enumerate}[A)]
+\item  $H_0: \mu_{6th} = \mu_{13th}$ \\ $H_A: \mu_{6th} \ne \mu_{13th}$
+\item  $H_0: p_{6th} = p_{13th}$ \\ $H_A: p_{6th} \ne p_{13th}$
+\item  $\textcolor{red}{H_0: \mu_{diff} = 0}$ \\ $\textcolor{red}{H_A: \mu_{diff} \ne 0}$ 
+\item  $H_0: \bar{x}_{diff} = 0$ \\ $H_A: \bar{x}_{diff} = 0$
+\end{enumerate}
+
+## Friday the $13^{th}$
+
+\small
+\begin{tabular}{rllrr || r || l}
+  \hline
+ & type & date & 6$^{\text{th}}$ & 13$^{\text{th}}$ & diff & location  \\ 
+  \hline
+  1 & traffic & 1990,  July & 139246 & 138548 & 698 & loc 1 \\
+  2 & traffic & 1990,  July & 134012 & 132908 & 1104 & loc 2 \\
+  3 & traffic & 1991,  September & 137055 & 136018 & 1037 & loc 1 \\
+  4 & traffic & 1991,  September & 133732 & 131843 & 1889 & loc 2 \\
+  5 & traffic & 1991,  December & 123552 & 121641 & 1911 & loc 1 \\
+  6 & traffic & 1991,  December & 121139 & 118723 & 2416 & loc 2 \\
+  7 & traffic & 1992,  March & 128293 & 125532 & 2761 & loc 1 \\
+  8 & traffic & 1992,  March & 124631 & 120249 & 4382 & loc 2 \\
+  9 & traffic & 1992,  November & 124609 & 122770 & 1839 & loc 1 \\
+  10 & traffic & 1992,  November & 117584 & 117263 & 321 & loc 2 \\
+   \hline
+\end{tabular}
+\normalsize
+
+\begin{align*}
+\hspace{6cm} \bar{x}_{diff} & = 1836 \\
+ s_{diff} & = 1176 \\
+ n &= 10
+\end{align*}
+
+## Finding the test statistic
+
+The test statistic for inference on a small sample (n < 50) mean is the $T$ statistic with $df = n - 1$.
+
+\centering{$T_{df} = \frac{\text{point estimate} - \text{null value}}{SE}$}
+
+\pause
+
+\raggedright
+\alert{in context...}
+
+\[\text{point estimate} = \bar{x}_{diff} = 1836\]
+\pause
+\[SE = \frac{s_{diff}}{\sqrt{n}} = \frac{1176}{\sqrt{10}} = 372 \]
+\pause
+\[T = \frac{1836-0}{372} = 4.94\]
+\pause
+\[df = 10-1 = 9\]
+
+\noindent\rule{4cm}{0.4pt}
+\small
+\alert{Note:} Null value is 0 because in the null hypothesis we set $\mu_{diff} = 0.$
+
+
+## Finding the p-value
+
+- The p-value is, once again, calculated as the area tail area under the $t$ distribution.
+
+\pause
+
+- Using R:
+
+```{r, echo=T}
+2 * pt(4.94, df = 9, lower.tail = FALSE)
+```
+
+\pause
+
+- Using a web app:
+
+  [https://gallery.shinyapps.io/dist_calc/](https://gallery.shinyapps.io/dist_calc/)
+
+\pause
+
+- Or when these aren't available, we can use a $t$-table.
+
+## Conclusion of the test
+
+\alert{What is the conclusion of this hypothese test?}
+
+\pause
+
+Since the p-value is quite low, we conclude that the data provide strong evidence of a difference between traffic flow on Friday $6^{th} \text{ and } 13^{th}.$
+
+## What is the difference?
+
+- We concluded that there is a difference in the traffic flow between Friday $6^{th} \text{ and } 13^{th}.$
+
+\pause
+
+- But it would be more interesting to find out what exactly this difference is.
+
+\pause
+
+- We can use a confidence interval to estimate this difference.
+
+## Confidence interval for a small sample mean
+
+- Confidence intervals are always of the form
+
+\centering{$\text{point estimate} \pm ME$}
+
+\pause
+
+- ME is always calculated as the product of a critical value and SE.
+
+\pause
+
+- Since small sample means follow a $t$ distribution (and not a $z$ distribution), the critical value is a $t^*$ (as opposed to a $z^*$).
+
+\centering{$\text{point estimate} \pm t^* \times SE$}
+
+## Finding the critical $t (t^*)$
+
+Using R:
+
+```{r, echo=T}
+qt(p = 0.975, df = 9)
+```
+
+## Constructing a CI for a small sample mean
+
+\alert{Which of the following is the correct calculation of a 95\% confidence interval for the difference between the traffic flow between Friday $6^{th} \text{ and } 13^{th}$?}
+
+\centering{$\bar{x}_{diff} = 1836 \hspace{0.5cm} s_{diff} = 1176 \hspace{0.5cm} n = 10 \hspace{0.5cm} SE = 372$}
+
+\begin{enumerate}[A)]
+\item $1836 \pm 1.96 \times 372$
+\item $1836 \pm 2.26 \times 372$
+\item $1836 \pm -2.26 \times 372$
+\item $1836 \pm 2.26 \times 1176$
+\end{enumerate}
+
+## Constructing a CI for a small sample mean
+
+\alert{Which of the following is the correct calculation of a 95\% confidence interval for the difference between the traffic flow between Friday $6^{th} \text{ and } 13^{th}$?}
+
+\centering{$\bar{x}_{diff} = 1836 \hspace{0.5cm} s_{diff} = 1176 \hspace{0.5cm} n = 10 \hspace{0.5cm} SE = 372$}
+
+\begin{enumerate}[A)]
+\item $1836 \pm 1.96 \times 372$
+\item $\textcolor{red}{1836 \pm 2.26 \times 372 \hspace{1cm}\rightarrow(995,2677)}$
+\item $1836 \pm -2.26 \times 372$
+\item $1836 \pm 2.26 \times 1176$
+\end{enumerate}
+
+## Interpreting the CI
+
+\alert{Which of the following is the \textbf{best} interpretation for the confidence interval we just calculated?}
+
+\centering{$\textcolor{red}{\mu_{diff: \text{ } 6th - 13th} = (995,2677)}$}
+
+\raggedright We are 95% confident that...
+
+A) The difference between the average number of cars on the road on Friday $6^{th} \text{ and } 13^{th}$ is between 995 and 2677.
+
+B) On Friday $6^{th}$ there are 995 to 2677 fewer cars on the road than on the Friday $13^{th}$, on average.
+
+C) On Friday $6^{th}$ there are 995 to 2677 more cars on the road than on the Friday $13^{th}$, on average.
+
+D) On Friday $13^{th}$ there are 995 to 2677 fewer cars on the road than on the Friday $6^{th}$, on average.
+
+
+## Interpreting the CI
+
+\alert{Which of the following is the \textbf{best} interpretation for the confidence interval we just calculated?}
+
+\centering{$\textcolor{red}{\mu_{diff: \text{ } 6th - 13th} = (995,2677)}$}
+
+\raggedright We are 95% confident that...
+
+A) The difference between the average number of cars on the road on Friday $6^{th} \text{ and } 13^{th}$ is between 995 and 2677.
+
+B) On Friday $6^{th}$ there are 995 to 2677 fewer cars on the road than on the Friday $13^{th}$, on average.
+
+C) On Friday $6^{th}$ there are 995 to 2677 more cars on the road than on the Friday $13^{th}$, on average.
+
+D) \textcolor{red}{On Friday $13^{th}$ there are 995 to 2677 fewer cars on the road than on the Friday $6^{th}$, on average.}
+
+## Synthesis
+
+\alert{Does the conclusion from the hypothesis test agree with the findings of the confidence intereval?}
+
+\pause
+
+Yes, the hypothesis test found a significant difference, and the CI does not contain the null value of 0.
+
+\pause
+
+\alert{Do you think the findings of this study suggests that people believe Friday $13^{th}$ is a day of bad luck?}
+
+\pause
+
+No, this is an observational study. We have just observed a significant difference between the number of cars on the road on these two days. We have not tested for people's beliefs.
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

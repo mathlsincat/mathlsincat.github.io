@@ -1,0 +1,716 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Chapter 5   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Chapter 5">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Slides/Chapter%205/Treatment%20Group/Section%205.3%20Hypothesis%20Testing%20for%20a%20Proportion/Section5.3-HypothesisTestingForAProportion.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Slides/Chapter%205/Treatment%20Group/Section%205.3%20Hypothesis%20Testing%20for%20a%20Proportion/Section5.3-HypothesisTestingForAProportion.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Chapter 5">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Chapter 5
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=F, message=F, warning=F}
+library(readr)
+library(openintro)
+library(here)
+library(tidyverse)
+data(COL)
+```
+
+
+# Hypothesis testing for a proportion
+
+## Remember when...
+
+Gender discrimination experiment:
+
+\begin{tabular}{ll  cc c} 
+  		&				& \multicolumn{2}{c}{\textit{Promotion}} \\
+\cline{3-4}
+							&			& Promoted	& Not Promoted 	& Total	\\
+\cline{2-5}
+\multirow{2}{*}{\textit{Gender	}}	&Male 		& 21	 	& 3		& 24 	\\
+							&Female		& 14	 	& 10 	 	& 24 \\
+\cline{2-5}
+							&Total		& 35		& 13		& 48 \\
+\end{tabular}
+
+\pause
+
+\centering{$\hat{p}_{males}=21/24 \approx 0.88$ and $\hat{p}_{females}=14/24 \approx 0.58$}
+
+\pause
+
+\raggedright Possible explanations:
+
+- Promotion and gender are **independent**, no gender discrimination, observed difference in proportions (0.88-0.58=0.30) is simply due to chance. $\rightarrow$ \alert{null} - (nothing is going on)
+
+- Promotion and gender are **dependent**, there is gender discrimination, observed difference in proportions (0.30) is not due to chance. $\rightarrow$ \alert{alternative} - (something is going on)
+
+## Result
+
+
+```{r, echo=F, message=F, warning=F, fig.width=4, fig.height=2,fig.align='center'}
+set.seed(8535)
+
+gender <- c(rep('male', 24), rep('female', 24))
+outcome <- c(rep(c('promoted', 'not promoted'), c(21, 3)), rep(c('promoted', 'not promoted'), c(14, 10)))
+
+nsim  = 100
+n     = length(gender)
+group = gender
+var1  = outcome
+success = "promoted"
+sim   = matrix(NA, nrow = n, ncol = nsim)
+n1    = n2 = 24
+
+statistic <- function(var1, group){	
+	t1 <- var1 == success & group == levels(as.factor(group))[1]
+	t2 <- var1 == success & group == levels(as.factor(group))[2]
+	sum(t1)/n1 - sum(t2)/n2 
+}
+
+for(i in 1:nsim){
+	sim[,i] = sample(group, n, replace = FALSE)
+}
+
+sim_dist = apply(sim, 2, statistic, var1 = outcome)
+diffs    = sim_dist
+pval     = sum(diffs >= 0.30) / nsim
+values  <- table(sim_dist)
+
+
+X <- c()
+Y <- c()
+for(i in 1:length(diffs)){
+	x   <- diffs[i]
+	rec <- sum(sim_dist == x)
+	X   <- append(X, rep(x, rec))
+	Y   <- append(Y, 1:rec)
+}
+
+par(mar = c(4, 1.5, 0, 1.5))
+plot(X, Y, xlim=range(diffs)+c(-1,1)*sd(diffs)/4, xlab = "Difference in promotion rates [P(diff>=0.30)=0.02]", ylab= "", axes = FALSE, ylim=c(0,max(Y)), col=COL[1], cex=1, cex.axis = 3,cex.lab=1, pch=20)
+axis(1, at = seq(-0.4,0.4,0.1), labels = c(-0.4,"",-0.2,"",0,"",0.2,"",0.4))
+abline(h=0)
+```
+
+\pause
+
+Since it was quite unlikely to obtain results like the actual data or something more extreme in the simulations (male promotions being 30% or more higher than female promotions), we decided to reject the null hypothesis in favor of the alternative.
+
+## Recap: Hypothesis testing framework
+
+- We start with a **null hypothesis** $\mathbf{(H_0)}$ that represents the status quo.
+
+- We also have an **alternative hypothesis** $\mathbf{(H_A)}$ that represents our research question, i.e. what we're testing for.
+
+- We conduct a hypothesis test under the assumption that the null hypothesis is true, either via simulation or traditional methods based on the central limit theorem (coming up next...).
+
+- If the test results suggest that the data do not provide convincing evidence for the alternative hypothesis, we stick with the null hypothesis. If they do, then we reject the null hypothesis in favor of the alternative.
+
+We'll formally introduce the hypothesis testing framework using an example on testing a claim about a proportion.
+
+## Testing hypotheses using confidence intervals
+
+\alert{Earlier we calculated a 95\% confidence interval for the proportion of American Facebook users who think Facebook categorizes their interests accurately as 64\% to 70\%. Based on this confidence interval, do the data support the hypothesis that majority of American Facebook users think facebook categorizes their interests accurately.}
+
+\pause
+
+- The associated hypotheses are:
+  
+  $H_0: p = 0.50: 50\%$ of American Facebook users think Facebook categorizes their interests accurately.
+  
+  $H_A: p>0.50:$ More than 50% of American Facebook users think Facebook categorizes their interests accurately.
+  
+- Null value is not included in the interval $\rightarrow$ reject the null hypothesis.
+
+- This is a quick-and-dirty approach for hypothesis testing, but it doesn't tell us the likelihood of certain outcomes under the null hypothesis (p-value).
+
+## Decision errors
+
+- Hypothesis tests are not flawless.
+
+- In the court system innocent people are sometimes wrongly convicted and the guilty sometimes walk free.
+
+- Similarly, we can make a wrong decision in statistical hypothesis tests as well.
+
+- The difference is that we have the tools necessary to quantify how often we make errors in statistics.
+
+## Decision errors
+
+There are two competing hypotheses: the null and the alternative. In a hypothesis test, we make a decision about which might be true, but our choice might be incorrect.
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{l l | c c}
+\multicolumn{2}{c}{} & \multicolumn{2}{c}{\textbf{Decision}} \\
+& & fail to reject $H_0$ &  reject $H_0$ \\
+  \cline{2-4}
+& $H_0$ true &  &  {\textcolor{red}{Type 1 Error}} \\
+\raisebox{1.5ex}{\textbf{Truth}} & $H_A$ true & {\textcolor{red}{Type 2 Error}} &  \\
+  \cline{2-4}
+\end{tabular}
+\end{center}
+\renewcommand{\arraystretch}{1}
+
+- A **Type 1 Error** is rejecting the null hypothesis when $H_0$ is true.
+
+- A **Type 2 Error** is failing to reject the null hypothesis when $H_A$ is true.
+
+- We (almost) never know if $H_0$ or $H_A$ is true, but we need to consider all possibilities.
+
+## Hypothesis Test as a trial
+
+If we again think of a hypothesis test as a criminal trial then it makes sense to frame the verdict in terms of the null and alternative hypotheses:
+
+
+\begin{center}
+\begin{varwidth}{\textwidth}
+\begin{itemize}
+  
+\item[$H_0:$] Defendant is innocent
+
+\item[$H_A:$] Defendant is guilty
+
+\end{itemize}
+\end{varwidth}
+\end{center}
+
+
+\raggedright Which type of error is being committed in the following circumstances?
+
+- Declaring the defendant innocent when they are actually guilty
+
+- Declaring the defendant guilty when they are actually innocent
+
+## Hypothesis Test as a trial
+
+If we again think of a hypothesis test as a criminal trial then it makes sense to frame the verdict in terms of the null and alternative hypotheses:
+
+
+\begin{center}
+\begin{varwidth}{\textwidth}
+\begin{itemize}
+  
+\item[$H_0:$] Defendant is innocent
+
+\item[$H_A:$] Defendant is guilty
+
+\end{itemize}
+\end{varwidth}
+\end{center}
+
+\raggedright Which type of error is being committed in the following circumstances?
+
+- Declaring the defendant innocent when they are actually guilty
+
+\centering{\alert{Type 2 error}}
+
+- Declaring the defendant guilty when they are actually innocent
+
+\centering{\alert{Type 1 error}}
+
+## Hypothesis Test as a trial
+
+\alert{Which error do you think is the worse error to make?}
+
+\pause
+
+"Better that ten guilty person escape than that one innocent suffer"
+
+\raggedleft{$-$ William Blackstone}
+
+## Type 1 error rate
+
+- As a general rule we reject $H_0$ when the p-value is less than 0.05, i.e. we use a **significance level** of 0.05, $\alpha = 0.05$.
+
+- This means that, for those cases where $H_0$ is actually true, we do not want to incorrectly reject it more than 5% of those times.
+
+- In other words, when using a 5% significance level, there is about 5% chance of making a Type 1 error (i.e., of rejecting the null hypothesis when the null hypothesis is actually true).
+
+\centering{$P$(Type 1 error) = $P$(Reject $H_0$ | $H_0$ true) $= \alpha$}
+
+- This is why we prefer small values of $\alpha -$ increasing $\alpha$ increases the Type 1 error rate.
+
+## Facebook interest categories
+
+\alert{The same survey asked the 850 respondents how confortable they are with Facebook creating a list of categories for them. 41\% of the respondents said they are comfortable. Do these data provide convincing evidence that the proportion of American Facebook users who are comfortable with Facebook creating a list of interest categories for them is different than 50\%?}
+
+
+
+\tiny [https://www.pewinternet.org/2019/01/16/facebook-algorithms-and-personal-data/](https://www.pewinternet.org/2019/01/16/facebook-algorithms-and-personal-data/)
+
+## Setting the hypotheses
+
+- The **parameter of interest** is the proportion of \underline{all} American Facebook users who are comfortable with Facebook creating categories of interests for them.
+
+- There may be two explanations why our sample proportion is lower than 0.50 (minority).
+  - The true population proportion is different than 0.50.
+  - The true population proportion is 0.50, and the difference between the true population proportion and the sample proportion is simply due to natural sampling variability.
+  
+## Setting the hypotheses
+
+- We start with the assumption that 50% of American Facebook users are comfortable with Facebook creating categories of interests for them
+
+\centering{$\mathbf{H_0:} p = 0.50$}
+
+- We test the claim that the proportion of American Facebook users who are comfortable with Facebook creating categories of interests for them is different than 50%
+
+\centering{$\mathbf{H_A:} p \neq 0.50$}
+
+## Facebook interest categories - conditions
+
+\alert{Which of the following is \underline{not} a condition that needs to be met to proceed with this hypothesis test?}
+
+A) Respondents in the sample should be independent of each other with respect to whether or not they feel comfortable with their interests being categorized by Facebook.
+
+B) Sampling should have been done randomly.
+
+C) The sample size should be less than 10% of the population of all American Facebook users.
+
+D) There should be at least 30 respondents in the sample.
+
+E) There should be at least 10 expected successes and 10 expected failure.
+
+## Facebook interest categories - conditions
+
+\alert{Which of the following is \underline{not} a condition that needs to be met to proceed with this hypothesis test?}
+
+A) Respondents in the sample should be independent of each other with respect to whether or not they feel comfortable with their interests being categorized by Facebook.
+
+B) Sampling should have been done randomly.
+
+C) The sample size should be less than 10% of the population of all American Facebook users.
+
+D) \alert{There should be at least 30 respondents in the sample.}
+
+E) There should be at least 10 expected successes and 10 expected failure.
+
+## Test statistic
+
+In order to evaluate if the observed sample proportion is unusual for the hypothesized sampling distribution, we determine how many standard errors away from the null it is, which is also called the **test statistic**.
+
+\centering{$\hat{p} \sim N \left( p = 0.50, SE = \sqrt{\frac{0.50 \times 50}{850}} \right)$}
+
+\centering{$Z = \frac{0.41-0.50}{0.0171}=-5.26$}
+
+\pause
+
+\raggedright \alert{The sample proportion is 5.26 standard errors away from the hypothesized value. Is this considered unusually low? That is, is the result \textbf{statistically significant}?}
+
+\pause
+
+Yes, and we can quantify how unusual it is using p-value.
+
+## P-values
+
+- We then use this test statistic to calculate the **p-value**, the probability of observing data at least as favorable to the alternative hypothesis as our current data set, if the null hypothesis were true.
+
+- If the p-value is **low** (lower than the significance level, $\alpha$, which is usually 5%) we say it would be very unlikely to observe the data if the null hypothesis were true, and hence **reject** $\mathbf{H_0}$.
+
+- If the p-value is **high** (higher than $\alpha$) we say that it is likely to observe the data even if the null hypothesis were true, and hence **do not reject** $\mathbf{H_0}$.
+
+## Facebook interest categories - P-value
+
+**p-value:** probability of observing data at least as favorable to $H_A$ as our current data set (a sample proportion lower than 0.41 or larger than 0.59), if in fact $H_0$ were true ($p=0.50$)
+
+\centering{P($\hat{p} < 0.41$ or $\hat{p} > 0.59$) = P($Z<-5.26$ or $Z>5.26$) = 2$\times$P($Z<-5.26$) $<0.0001$}
+
+```{r, echo=F, message=F, warning=F, fig.width=4, fig.height=2.75,fig.align='center'}
+z=seq(-6,6,0.1)
+plot(z,dnorm(z), type = "l", lwd=3, xaxt="n", ylab = "density", xlab="")
+axis(side=1, at=c(-5.26,0,5.26), labels = TRUE)
+abline(v=c(-5.26,5.26))
+```
+
+```{r, echo=TRUE}
+2*pnorm(-5.26, mean=0, sd=1)
+```
+
+
+## Facebook interest categories - Making a decision
+
+- p-value < 0.0001
+  
+  - If 50% of all American FB users are comfortable with FB creating these interest categories, there is less than a 0.01% chance of observing random sample of 850 American Facebook users where 41% or fewer or 59% or higher feel comfortable with it.
+  
+  - Pretty low probability to think that observed sample proportion, or something more extreme, is likely to happen by chance.
+  
+- Since p-value is **low** (lower than 5%), we reject $\mathbf{H_0}$.
+
+- The data provide convincing evidence that the proportion of American FB users who are comfortable with FB creating a list of interest categories for them is different than 50%.
+
+- The difference between the null value of 0.50 and observed sample proportion of 0.41 is **not due to chance** or sampling variability.
+
+## Choosing a significance level
+
+- While the traditional level is 0.05, it is helpful to adjust the significance level based on the application.
+
+- Select a level that is smaller or larger than 0.05 depending on the consequences of any conclusions reached from the test.
+
+- If making a Type 1 Error is dangerous or especially costly, we should choose a small significance level (e.g. 0.01). Under this scenario we want to be very cautious about rejecting the null hypothesis, so we demand very strong evidence favoring $H_A$ before we would reject $H_0$.
+
+- If a Type 2 Error is relatively more dangerous or much more costly than a Type 1 Error, then we should choose a higher significance level (e.g. 0.10). Here we want to be cautious about failing to reject $H_0$ when the null is actually false.
+
+## One vs. Test sided hypothesis tests
+
+- In two sided hypothesis tests we are interested in whether $p$ is either  above or below some null value $p_0: H_A: p \neq p_0$.
+
+- In one sided hypothesis test we are interested in $p$ differing from the null value $p_0$ in one direction (and not the other):
+
+  - If there is only value in detecting if population parameter is less than $p_0$, then $H_A: p<p_0$.
+  
+  - If there is only value in detecting if population parameter is greater than $p_0$, then $H_A: p>p_0$.
+  
+- Two-sided tests are often more appropriate as we often want to detect if the data goes clearly in the opposite direction of our alternative hypothesis as well.
+
+
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,592 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Chapter 5   Learning Strategies</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Learning Strategies">
+<meta property="og:title" content="Chapter 5">
+
+
+  <link rel="canonical" href="http://localhost:4000/files/Slides/Chapter%205/Treatment%20Group/Section%205.1%20Point%20Estimate%20and%20Sampling%20Variability/Section5.1-PointEstimateAndSamplingVariability.rmd">
+  <meta property="og:url" content="http://localhost:4000/files/Slides/Chapter%205/Treatment%20Group/Section%205.1%20Point%20Estimate%20and%20Sampling%20Variability/Section5.1-PointEstimateAndSamplingVariability.rmd">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "BPR Project",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Learning Strategies Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Learning Strategies</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/syllabus/">Syllabus</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/slides/">Slides</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/labs/">Statistical Computing Labs</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tutorials/">R Tutorials</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/dap/">Data Analysis Project</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/workshop/">Faculty Workshop</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/manual/">Implementation Manual</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research/Publication</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://ncatregister.com/wp-content/uploads/2019/02/NCAT-Aggie.jpg" alt="BPR Project">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">BPR Project</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Chapter 5">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Chapter 5
+</h1>
+          
+        
+        
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=F, message=F, warning=F}
+library(readr)
+library(openintro)
+library(here)
+library(tidyverse)
+data(COL)
+```
+
+# Point estimates and sampling variability
+
+## Point estimates and error
+
+- We are often interested in **population parameters**.
+
+- Complete populations are difficult to collect data on, so we use **sample statistics** as **point estimates** for the unknown population parameters of interest.
+
+- **Error** in the estimate $\rightarrow$ difference between population parameter and sample statistic.
+
+- Generally, the **error** in the estimate consists of two aspects:
+
+- **Bias** is systematic tendency to over- or under-estimate the true population parameter.
+
+- **Sampling error** describes how much an estimate will tend to vary from one sample to the next.
+
+- Much of statistics is focused on understanding and quantifying sampling error, and **sample size** is helpful for quantifying this error.
+
+## Practice
+
+\alert{Suppose we randomly sample 1,000 adults from each state in the U.S. Would you expect the sample means of their heights to be the same, somewhat different, or very different?}
+
+\pause
+
+Not the same, but only somewhat different.
+
+## 
+
+![](images/pew1.png)
+
+![](images/pew2.png)
+
+![](images/pew3.png)
+
+## Margin of error
+
+![](images/pew4.png)
+
+- $41\% \pm 2.9\%:$ We are 95% confident that 38.1% to 43.9% of the public believe young adults, rather than middle-aged or older adults, are having the toughest time in today's economy.
+
+- $49\% \pm 4.4\%:$ We are 95% confident that 44.6% to 53.4% of 18-34 years old have taken a job they didn't want just to pay the bills.
+
+## Practice
+
+\alert{Suppose the proportion of American adults who support the expansion of solar energy is p = 0.88, which is our parameter of interest. Is a randomly selected American adult more or less likely to supoort the expansion of solar energy?}
+
+\pause
+
+More likely.
+
+##
+
+\alert{Suppose that you don't have access to the population of all American adults, which is a quite likely scenario. In order to estimate the proportion of American adults who support solar power expansion, you might sample from the population and use your sample proportion as the best guess for the unknown population proportion.}
+
+- Sample, without replacement, 1000 American adults from the population, and record whether they support or not solar power expansion.
+
+- Find the sample proportion.
+
+- Plot the distribution of the sample proportions obtained by members of the class.
+
+##
+
+```{r, echo=T}
+# 1. Create a set of 330 million entries, where 88%
+# of them are "support" and 12% are "not".
+
+pop_size <- 330000000
+possible_entries <- c(rep("support", 0.88 * pop_size),
+                      rep("not", 0.12 * pop_size))
+
+# 2. Sample 1000 entries without replacement.
+
+sampled_entries <- sample(possible_entries,
+                          size = 1000, replace = F)
+
+# 3. Compute p-hat: count the number that are
+# "support", then divide by # of the sample size
+
+sum(sampled_entries == "support")/1000
+```
+
+## Sampling distribution
+
+Suppose you were to repeat this process many times and obtain many $\hat{p}$s. This distribution is called a sampling distribution.
+
+```{r, echo=F, message=F, warning=F, fig.width=8, fig.height=4,fig.align='center'}
+phat <- rep(NA, 10000)
+for(i in 1:10000){
+  sampled_entries <- sample(possible_entries, size = 1000)
+  phat[i] <- sum(sampled_entries == "support") / 1000
+}
+
+# df
+
+sampling <- tibble(phat = phat)
+
+# plot
+
+ggplot(sampling, aes(x = phat)) +
+  geom_histogram(binwidth = 0.01, fill = COL[1]) +
+  theme_minimal(base_size = 14) +
+  labs(x = "Simulated sample proportion", y = "")
+```
+
+## Practice
+
+\alert{What is the shape and center of this distribution? Based on this distribution, what do you think is the true population proportion?}
+
+```{r, echo=F, message=F, warning=F, fig.width=8, fig.height=4,fig.align='center'}
+ggplot(sampling, aes(x = phat)) +
+  geom_histogram(binwidth = 0.01, fill = COL[1]) +
+  theme_minimal(base_size = 14) +
+  labs(x = "Simulated sample proportion", y = "")
+```
+
+\pause
+
+The distribution is unimodal and roughly symmetric. A reasonable guess for the true population proportion is the center of this distribution, approximately 0.88.
+
+## Sampling distributions are never observed
+
+- In real-world applications, we never actually observe the sampling distribution, yet it is useful to always think of a point estimate as coming from such a hypothetical distribution.
+
+- Understanding the sampling distribution will help us characterize and make sense of the point estimates that we do observe.
+
+## Central Limit Theorem
+
+Sample proportions will be nearly normally distributed with mean equal to the population proportion, $p$, and standard error equal to $\sqrt{\frac{p(1-p)}{n}}$.
+
+\centering{$\hat{p} \sim N \left(mean=p, SE = \sqrt{\frac{p(1-p)}{n}} \right)$}
+
+- It wasn't a coincidence that the sampling distribution we saw earlier was symmetric, and centered at the true population proportion.
+
+- We won't go through a detailed proof of why $SE = \sqrt{\frac{p(1-p)}{n}}$, but note that as $n$ increases $SE$ decreases.
+    
+  - As $n$ increases samples will yield more consistent $\hat{p}$s, i.e. variability among $\hat{p}$s will be lower.
+  
+## CLT - conditions
+
+Certain conditions must be met for the CLT to apply:
+
+\begin{enumerate}
+
+\item \textbf{Independence:} Sampled observations must be independent. This is difficult to verify, but is more likely if
+  
+  \begin{itemize}
+  \small
+  \item random sampling/assignment is used, and
+  \item if sampling without replacement, $n < 10\%$ of the population.
+  \normalsize
+  \end{itemize}
+  
+\item \textbf{Sample size:} There should be at least 10 expected successes and 10 expected failures in the observed sample. This is difficult to verify if you don't know the population proportion (or can't assume a value for it). In those cases we look for the number of observed successes and failures to be at least 10.
+
+\end{enumerate}
+
+## When $p$ is unknown
+
+- The CLT states $SE = \sqrt{\frac{p(1-p)}{n}}$, with the condition that $np$ and $n(1-p)$ are at least 10, however we often don't know the value of $p$, the population proportion.
+
+- In these cases we substitute $\hat{p}$ for $p$.
+
+## When $p$ is low
+
+\alert{Suppose we have a population where the true population proportion is $p=0.05,$ and we take random sample of size $n = 50$ from this population. We calculate the sample proportion in each sample and plot these proportions. Would you expect this distribution to be nearly normal? Why, or why not?}
+
+\pause
+
+No, the success-failure condition is not met $(50 *0.05 = 2.5)$, hence we would not expect the sampling distribution to be nearly normal.
+
+```{r, echo=F, message=F, warning=F, fig.width=4, fig.height=1.8,fig.align='center'}
+p <- 0.05
+
+N <- 100000000
+ones <- N * p
+zeros <- N * (1-p)
+pop <- c(rep(1, ones), rep(0, zeros))
+
+n <- 50
+
+set.seed(12345)
+
+sampling <- tibble(
+  phat = rep(NA, 1000)
+)
+
+for(i in 1:nrow(sampling)){
+  sampling$phat[i] <- sum(sample(pop, n)) / n
+}
+
+ggplot(sampling, aes(x = phat)) +
+  geom_histogram(binwidth = 0.01, fill = COL[1]) +
+  theme_minimal() +
+  labs(x = "Simulated sample proportion", y = "")
+```
+
+##
+
+\alert{What happens when $np$ and/or $n(1-p)<10$?}
+
+\begin{multicols}{2}
+
+\includegraphics[width=1\columnwidth]{clt_prop_grid_1.pdf}
+
+\columnbreak
+
+\includegraphics[width=1\columnwidth]{clt_prop_grid_2.pdf}
+
+\end{multicols}
+
+## When the conditions are not met...
+
+- When either $np$ or $n(1-p)$ is small, the distribution is more discrete.
+
+- When $np$ or $n(1-p)<10$, the distribution is more skewed. 
+
+- The larger both $np$ and $n(1-p)$, the more normal the distribution.
+
+- When $np$ and $n(1-p)$ are both very large, the discreteness of the distribution is hardly evident, and the distribution looks much more like a normal distribution.
+
+## Extending the framework for other statistics
+
+- The strategy of using sample statistic to estimate a parameter is quite common, and it's a strategy that we can apply to other statistics besides a proportion.
+
+  - Take a random sample of students at a college and ask them how many extracurricular activities they are involved in to estimate the average number of extra curricular activities all students in this college are interested in.
+  
+- The principles and general ideas are from this chapter apply to other parameters as well, even if the details change a little.
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/IntroToStatNCAT/BPRProject.github.io"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 BPR Project. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+
