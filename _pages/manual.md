@@ -1,8 +1,12 @@
 ---
 permalink: /manual/
-title: "Implementation Manual"
+title: "Learning-Strategy Instruction Manual"
 ---
-  
+
 {% include base_path %}
 
-## Implementation protocol manual for MATH 224
+## Instruction Manual
+
+[Word Document](){:target="_blank"}
+
+[PDF](){:target="_blank"}

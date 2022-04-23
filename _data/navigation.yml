@@ -1,28 +1,17 @@
 # main links links
 main:
 
-  - title: "Syllabus"
-    url: /syllabus/
-
-  - title: "Slides"
-    url: /slides/
-
-  - title: "Statistical Computing Labs"
-    url: /labs/
-
-  - title: "R Tutorials"
-    url: /tutorials/
-
-  - title: "Data Analysis Project"
-    url: /dap/
-
-  - title: "Faculty Workshop"
-    url: /workshop/
-
-  - title: "Implementation Manual"
+  - title: "Learning-Strategy Instruction Manual"
     url: /manual/
 
-  - title: "Research/Publication"
-    url: /research/
+  - title: "Math Diagnostic Tests"
+    url: /diagtests/
+
+  - title: "Surveys"
+    url: /surveys/
+
+  - title: "Publications/Presentations"
+    url: /presentations/
+
 
    

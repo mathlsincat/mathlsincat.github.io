@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Learning Strategies"
+title                    : "Home"
 title_separator          : " "
 name                     : &name "BPR Project"
 description              : &description "personal description"
