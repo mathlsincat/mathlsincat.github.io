@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Overview of the Project"
+title: "Effects of Integrating Learning-Strategy Instruction Within Math Courses on Students’ Math Mindset, Self-Regulated Learning and Performance"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -16,10 +16,9 @@ Students' learning strategies are thoughts, behaviors, or beliefs that facilitat
 Funding Source
 =====
 
-The National Science Foundation (NSF) Historically Black Colleges and Universities Undergraduate Program (HBCU-UP) through Broadening Participation Research (BPR) in STEM Education projects supports the development, implementation, and study of new theory-driven models and innovations related to the participation and success of underrepresented groups in STEM undergraduate education.
-
 This project is supported by a grant from the NSF HBCU-UP BPR Projects Program under Grant No. [HRD 2107285](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2107285&HistoricalAwards=false){:target="_blank"}.
 
+The National Science Foundation (NSF) Historically Black Colleges and Universities Undergraduate Program (HBCU-UP) through Broadening Participation Research (BPR) in STEM Education projects supports the development, implementation, and study of new theory-driven models and innovations related to the participation and success of underrepresented groups in STEM undergraduate education.
 
 
 Project Team
@@ -31,7 +30,7 @@ The project team is composed of well-versed STEM education researchers, social s
 
 [Dr. Guoqing Tang](https://www.ncat.edu/employee-bio.php?directoryID=1421948644){:target="_blank"} (Co-PI), professor and chair of the Mathematics & Statistics Department, will manage the engagement of faculty and graduate research assistants and the scheduling of course sections included in the study.
 
-[Dr. Katrina Nelson](https://www.ncat.edu/employee-bio.php?directoryID=1793256121){:target="_blank"} (Co-PI), teaching associate professor of Mathematics, is responsible for Math103/104 control and treatment group activities, focus group study participant recruitment and student performance data collection, and training and coordination of other MATH103/ 104 control and treatment section instructors. She will work closely with two senior personnel to implement project activities in the college algebra courses: Dr. Kathy Cousins-Cooper, professor of Mathematics and MATH103/104 course coordinator and Dr. Nicholas Luke, associate professor of Mathematics.
+[Dr. Katrina Nelson](https://www.ncat.edu/employee-bio.php?directoryID=1793256121){:target="_blank"} (Co-PI), teaching associate professor of Mathematics, is responsible for Math103/104 control and treatment group activities, focus group study participant recruitment and student performance data collection, and training and coordination of other MATH103/ 104 control and treatment section instructors. She will work closely with two senior personnel to implement project activities in the college algebra courses: [Dr. Kathy Cousins-Cooper](https://www.ncat.edu/employee-bio.php?directoryID=1499130158){:target="_blank"}, professor of Mathematics and MATH103/104 course coordinator and [Dr. Nicholas Luke](https://www.ncat.edu/employee-bio.php?directoryID=1590313611){:target="_blank"}, associate professor of Mathematics.
 
 [Dr. Ling Xu](https://www.ncat.edu/employee-bio.php?directoryID=322316827){:target="_blank"} (Co-PI), assistant professor of Mathematics, is responsible for MATH131/132 control and treatment group activities, focus group study participant recruitment and student performance data collection, and training and coordination of other MATH131/132 control and treatment section instructors. She will work closely with three senior personnel to implement project activities in the calculus courses: [Dr. Paramanathan Varatharajah](https://www.ncat.edu/employee-bio.php?directoryID=446050127){:target="_blank"}, associate professor of Mathematics and course coordinator of MATH131/132, [Dr. Shea Burns](https://www.ncat.edu/employee-bio.php?directoryID=1570815169){:target="_blank"}, associate professor of Mathematics and [Dr. Barbara Tankersley](https://www.ncat.edu/employee-bio.php?directoryID=334517812){:target="_blank"}, associate professor of Mathematics.
 
