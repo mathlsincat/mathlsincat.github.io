@@ -7,6 +7,17 @@ title: "Attitude Scales"
 
 ## Math Mindset Scale
 
+The Dweck’s Mindset Instrument (DMI; Dweck, 2006; Hocker, 2017 & Sun 2015) was adapted by Sun (2015) and Hocker (2017) to assess students’ math growth mindset, specifically. This instrument was selected to measure math growth mindset for the BPR study. It has 16 items that address multiple domains: math mindset, beliefs about the nature of math, mastery/ performance orientation, and identification with math. Students answered most items on a 6-point Likert scale, ranging from 1 = Strongly agree to 6 = Strongly disagree; some items included response scales that ranged from 1 = Not at all to 4 = A lot; 1 = Very hard to 5 = Very easy; 1 = Very bad to 5 = Very good; and 1 = Not at all important to 5 = Extremely important.
+
 ## Self-Regulated Learning Scale
 
+The Self-Regulation Strategy Inventory–Self-Report (SRSI–SR), was adapted by Callan (2014) for math students, specifically. This instrument was selected to SRL for the BPR study. It has 28 items divided into three subscales measuring three categories of SRL strategies: managing environment and behavior, seeking and learning information, and maladaptive regulatory behaviors. Students answered items on a 5-point Likert scale, ranging from 1 = almost never to 5 = almost always.
+
 ## Identity Scales
+
+* **Math identity**: The Locke and colleagues (2013) math identity measure was selected to assess math identity for the BPR study. It includes 10 items across three domains – math competence, recognition by others, and interest in math. Students answered items on a 6-point Likert scale, ranging from 1 = strongly agree to 6 = strongly disagree.
+
+* **Racial identity**: Skip-logic was used to direct students to the appropriate scale based on their response to the race/ethnicity question. The Brown et al. (2014) Multigroup Ethnic Identity Measure (MEIM) was selected to measure the racial identity of non-Black students in the BPR project. It includes 12 items subscales related to centrality, public recognition, and private regard. Students answered items on a 6-point Likert scale, ranging from 1 = strongly disagree to 6 = strongly agree. Seller’s et al.’s (1997) Multidimensional Inventory of Black Identity (MIBI) was selected to measure racial identity of Black students. It includes 20 items subscales related to centrality, public recognition, and private regard. Students answered items on a 6-point Likert scale, ranging from 1 = strongly disagree to 6 = strongly agree.
+
+* **Gender identity**: A modified version of the MIBI was selected to measure gender identity because existing measures either address male or female gender role preference or include non-binary gender definitions. Skip-logic was used to direct students to the appropriate scale based on their response to the gender question. The scale includes 8 items related to centrality. Students responded to items on a 6-point Likert scale, ranging from 1 = strongly disagree to 6 = strongly agree.
+
