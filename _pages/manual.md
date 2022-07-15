@@ -1,19 +1,19 @@
 ---
 permalink: /manual/
-title: "Learning-Strategy Instruction Manual"
+title: "LSI Manual"
 ---
 
 {% include base_path %}
 
-In this section we provide the implementation manual for integrating learning strategy instruction within math courses. This manual shall serve as a guide for instructors planning to incorporate learning strategy instruction in their courses. The manual covers the following topics: 
+The learning strategies instruction implementation manual for integrating learning-strategy instruction within mathematics courses. This manual shall serve as a guide for instructors planning to incorporate learning-strategy instruction in their courses. The manual covers the following topics: 
+
 * Introduction to Learning Strategies
 * Methods of Integrating Learning-Strategy Instructions in Math Courses
 * Student Learning Outcomes
 * Methods to Evaluate Effectiveness of Learning-Strategy Instruction
 
+The full manual can be downloaded using the links below:
 
-The full Manual can be downloaded using the links below:
+[Word Document](https://github.com/mathlsincat/mathlsincat.github.io/blob/efc46544866f40ab49a827fd1f94e2a5fa837c3d/files/InstructionManual/LSI%20Guide_v2_05312022.docx){:target="_blank"}
 
-[Word Document](https://github.com/IntroToStatNCAT/BPRProject.github.io/blob/main/files/Instruction%20Manual/Learning%20Strategies%20Instruction%20Manual.docx){:target="_blank"}
-
-[PDF](https://github.com/IntroToStatNCAT/BPRProject.github.io/blob/main/files/Instruction%20Manual/Learning%20Strategies%20Instruction%20Manual.pdf){:target="_blank"}
+[PDF](https://github.com/mathlsincat/mathlsincat.github.io/blob/efc46544866f40ab49a827fd1f94e2a5fa837c3d/files/InstructionManual/LSI%20Guide_v2_05312022.pdf){:target="_blank"}
