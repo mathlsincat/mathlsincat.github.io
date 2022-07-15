@@ -36,4 +36,6 @@ The project team is composed of well-versed STEM education researchers, social s
 
 [Dr. Kalynda Smith](https://www.ncat.edu/employee-bio.php?directoryID=1802602022){:target="_blank"} (Co-PI), assistant professor of Psychology, is responsible for survey instrument and focus group protocol design and research methodologies implementation and refinement, and student focus group session facilitation, transcription and analysis.
 
-[Dr. Monique Matelski](https://www.linkedin.com/in/monique-matelski-ph-d-4910bb84/){:target="_blank"} (External Evaluator), Director of Research & Evaluation, at Cobblestone Applied Research & Evaluation, Inc, is responsible for project evaluation and assessment. 
+Dr. Rebecca M. Eddy is the Founder and current President of Cobblestone Applied Research & Evaluation, Inc. She serves as Principal Investigator of the BPR Evaluation. [More info.](https://www.cobblestoneeval.com/team/rebecca-eddy/){:target="_blank"}
+
+Dr. Monique H. Matelski is the Director of Research and Evaluation at Cobblestone Applied Research & Evaluation, Inc. She served as Project Manager of the BPR Evaluation during the first year of project (2021-2022). [More info.](https://www.cobblestoneeval.com/team/monique-matelski/){:target="_blank"} 
