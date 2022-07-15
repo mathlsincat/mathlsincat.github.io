@@ -1,11 +1,6 @@
 ---
-permalink: /
+permalink: /home/
 title: "Effects of Integrating Learning-Strategy Instruction Within Math Courses on Students’ Math Mindset, Self-Regulated Learning and Performance"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 Project Goals
