@@ -1,17 +1,19 @@
 # main links links
 main:
 
-  - title: "Learning-Strategy Instruction Manual"
+  - title: "LSI Manual"
     url: /manual/
 
-  - title: "Math Diagnostic Tests"
-    url: /diagtests/
+  - title: "Assessments"
+    url: /assessments/
 
-  - title: "Surveys"
-    url: /surveys/
+  - title: "Attitude Scales"
+    url: /scales/
 
-  - title: "Publications/Presentations"
-    url: /presentations/
+  - title: "Research"
+    url: /research/
 
+  - title: "Faculty Workshops"
+    url: /workshops/
 
    
