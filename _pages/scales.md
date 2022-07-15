@@ -13,7 +13,7 @@ The Dweck’s Mindset Instrument (DMI; Dweck, 2006; Hocker, 2017 & Sun 2015) was
 - Hocker, T. (2017). _A Study of Perceptions of Math growth mindset, Math Anxiety, and View of Math by Young Adults_. PhD Thesis, Southeastern University.
 - Sun, K. L. (2015). _There’s no limit: Mathematics teaching for a growth mindset_. PhD Thesis, Stanford University.
 
-## Self-Regulated Learning Scale
+## Self-Regulated Learning (SRL) Scale
 
 The Self-Regulation Strategy Inventory–Self-Report (SRSI–SR) of Clearly (2006), was adapted by Callan (2014) for math students, specifically. This instrument was selected to SRL for the BPR study. It has 28 items divided into three subscales measuring three categories of SRL strategies: managing environment and behavior, seeking and learning information, and maladaptive regulatory behaviors. Students answered items on a 5-point Likert scale, ranging from 1 = almost never to 5 = almost always.
 
@@ -31,4 +31,6 @@ The Self-Regulation Strategy Inventory–Self-Report (SRSI–SR) of Clearly (200
   - Brown, S. D., Unger Hu, K. A., Mevi, A. A., Hedderson, M. M., Shan, J., Quesenberry, C. P. and Ferrara, A. (2014). The Multigroup Ethnic Identity Measure—Revised: Measurement invariance across racial and ethnic groups. _Journal of Counseling Psychology_, 61(1), 154.
   - Lock, R. M., Hazari, Z., and Potvin, G. (2013). Physics Career Intentions: The Effect of Physics Identity, Math Identity, and Gender. _AIP Conference Proceedings_, 1513, 262.
   - Sellers, R. M., Rowley, S. A., Chavous, T. M., Shelton, J. N., and Smith, M. A. (1997). Multidimensional Inventory of Black Identity: A preliminary investigation of reliability and construct validity. _Journal of Personality and Social Psychology_, 73(4), 805.
+  
+The combined Identities, Mindset and SRL survey used for this BPR project can be accessed through the following link: [[Survey](https://github.com/mathlsincat/mathlsincat.github.io/blob/ef06b40e561edb3c2f79cd7f0b17537f6352efd5/files/Surveys/Identities-Mindset-SRL-PreSurvey-Fall2022.docx){:target="_blank"}]
 
