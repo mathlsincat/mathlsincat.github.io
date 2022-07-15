@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "Math Learning-Strategy Instruction"
 title_separator          : " "
-name                     : &name "BPR Project"
+name                     : &name "Learning-Strategy Instruction"
 description              : &description "personal description"
 url                      : https://BPRProject.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "IntroToStatNCAT/BPRProject.github.io"
+repository               : "mathlsincat/mathlsincat.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "BPR Project"
-  avatar           : "https://cdn.d1baseball.com/logos/teams/256/ncat.png"
-  bio              : # "MATH 224"
+  name             : "NCA&T - NSF: Math LSI Project"
+  avatar           : "ncat-nsf-logo.png"
+  bio              : # "MATH LSI"
   location         : # "Mateena Hall"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
