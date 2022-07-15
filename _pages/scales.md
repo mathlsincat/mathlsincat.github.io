@@ -28,7 +28,7 @@ The Self-Regulation Strategy Inventory–Self-Report (SRSI–SR) of Clearly (200
 
 * **Gender identity**: A modified version of the MIBI was selected to measure gender identity because existing measures either address male or female gender role preference or include non-binary gender definitions. Skip-logic was used to direct students to the appropriate scale based on their response to the gender question. The scale includes 8 items related to centrality. Students responded to items on a 6-point Likert scale, ranging from 1 = strongly disagree to 6 = strongly agree.
 
-- Brown, S. D., Unger Hu, K. A., Mevi, A. A., Hedderson, M. M., Shan, J., Quesenberry, C. P. and Ferrara, A. (2014). The Multigroup Ethnic Identity Measure—Revised: Measurement invariance across racial and ethnic groups. _Journal of Counseling Psychology_, 61(1), 154.
-- Lock, R. M., Hazari, Z., and Potvin, G. (2013). Physics Career Intentions: The Effect of Physics Identity, Math Identity, and Gender. _AIP Conference Proceedings_, 1513, 262.
-- Sellers, R. M., Rowley, S. A., Chavous, T. M., Shelton, J. N., and Smith, M. A. (1997). Multidimensional Inventory of Black Identity: A preliminary investigation of reliability and construct validity. _Journal of Personality and Social Psychology_, 73(4), 805.
+  - Brown, S. D., Unger Hu, K. A., Mevi, A. A., Hedderson, M. M., Shan, J., Quesenberry, C. P. and Ferrara, A. (2014). The Multigroup Ethnic Identity Measure—Revised: Measurement invariance across racial and ethnic groups. _Journal of Counseling Psychology_, 61(1), 154.
+  - Lock, R. M., Hazari, Z., and Potvin, G. (2013). Physics Career Intentions: The Effect of Physics Identity, Math Identity, and Gender. _AIP Conference Proceedings_, 1513, 262.
+  - Sellers, R. M., Rowley, S. A., Chavous, T. M., Shelton, J. N., and Smith, M. A. (1997). Multidimensional Inventory of Black Identity: A preliminary investigation of reliability and construct validity. _Journal of Personality and Social Psychology_, 73(4), 805.
 
