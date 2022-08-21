@@ -14,6 +14,6 @@ The learning strategies instruction implementation manual for integrating learni
 
 The full manual can be downloaded using the links below:
 
-[Word Document](https://github.com/mathlsincat/mathlsincat.github.io/blob/efc46544866f40ab49a827fd1f94e2a5fa837c3d/files/InstructionManual/LSI%20Guide_v2_05312022.docx){:target="_blank"}
+[Word Document](https://github.com/mathlsincat/mathlsincat.github.io/blob/491901deffa608f2c3144147d38ac33790605fe4/files/InstructionManual/LSI%20Guide_v3_08162022.docx){:target="_blank"}
 
-[PDF](https://github.com/mathlsincat/mathlsincat.github.io/blob/efc46544866f40ab49a827fd1f94e2a5fa837c3d/files/InstructionManual/LSI%20Guide_v2_05312022.pdf){:target="_blank"}
+[PDF](https://github.com/mathlsincat/mathlsincat.github.io/blob/491901deffa608f2c3144147d38ac33790605fe4/files/InstructionManual/LSI%20Guide_v3_08162022.pdf){:target="_blank"}
