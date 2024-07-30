@@ -34,5 +34,5 @@ The Self-Regulation Strategy Inventory–Self-Report (SRSI–SR) of Clearly (200
   
 The combined Identities, Mindset and SRL survey used for this BPR project can be accessed through the following link: [[Survey](https://github.com/mathlsincat/mathlsincat.github.io/blob/ef06b40e561edb3c2f79cd7f0b17537f6352efd5/files/Surveys/Identities-Mindset-SRL-PreSurvey-Fall2022.docx){:target="_blank"}]
 
-The combined Identities, Mindset and SRL _Retrospective Pre-Post-survey_ used for this BPR project can be accessed through the following link: [[Retrospective Pre-Post-Survey](https://github.com/mathlsincat/mathlsincat.github.io/blob/ef06b40e561edb3c2f79cd7f0b17537f6352efd5/files/Surveys/Identities-Mindset-SRL-PreSurvey-Fall2022.docx){:target="_blank"}]
+The combined Identities, Mindset and SRL _Retrospective Pre-Post-survey_ used for this BPR project can be accessed through the following link: [[Retrospective Pre-Post-Survey](https://github.com/mathlsincat/mathlsincat.github.io/blob/2aff3446a9bf92966a13c0fd35a0f605559f228d/files/Scales/Identities-Mindset-SRL-Retrospective-Pre-Post-Survey.pdf){:target="_blank"}]
 
