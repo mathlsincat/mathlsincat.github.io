@@ -13,7 +13,7 @@ title: "Research"
 
 ## Presentations
 
-+ **Joint Mathematics Meetings (JMM).** Seattle, USA. January 2025. "Effects of a learning-strategy instruction intervention on growth mindset and self-regulation in introductory mathematics courses". [[Slides](https://github.com/mathlsincat/mathlsincat.github.io/blob/2c8d2bdd78e3894fb09f3311cd158f195dc7a180/files/Publications/JMM2025-Slides.pdf){:target="_blank"}]
++ **Joint Mathematics Meetings (JMM).** Seattle, USA. January 2025. "Effects of a learning-strategy instruction intervention on growth mindset and self-regulation in introductory mathematics courses". [[Slides](https://github.com/mathlsincat/mathlsincat.github.io/blob/92076915f81b42d6d4a4d4990291731533eab0d4/files/Publications/JMM2025-Slides.pdf){:target="_blank"}]
 
 + **51st Annual Conference of the Research Council on Mathematics Learning (RCML).** South Carolina, USA. March 2024. "Learning strategies for math growth mindset, self-regulation, and performance". [[Slides](https://github.com/mathlsincat/mathlsincat.github.io/blob/2c8d2bdd78e3894fb09f3311cd158f195dc7a180/files/Publications/RCML2024-Slides.pdf){:target="_blank"}]
 
